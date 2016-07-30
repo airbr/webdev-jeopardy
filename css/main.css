@@ -1,1 +1,22 @@
 /*Jeopardy CSS*/
+.top {
+  height: 120px;
+  width: 100%;
+  background-color: red;
+}
+.topscreen {
+  background-color: red;
+  width: 100vw;
+}
+}
+.question {
+    height:100px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 1.5em;
+    padding-top: 35px;
+    cursor: pointer;
+}
+h1 {
+  color: red;
+}
