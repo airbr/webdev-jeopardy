@@ -1,4 +1,9 @@
 /*Jeopardy CSS*/
+.btn-outline-secondary {
+  display: flex;
+  flex-direction: row;
+}
+
 .top {
   height: 120px;
   width: 100%;

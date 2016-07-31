@@ -14,8 +14,20 @@ Technologies used in this game include:
 
 HTML5
 CSS3
-Bootstrap
-JQuery
+Bootstrap 3.3.7
+JQuery/Ajax
+
+
+Resources referred to included:
+
+* [Bootstrap Wells](http://www.w3schools.com/bootstrap/bootstrap_wells.asp)
+* [Bootstrap Modal](http://www.w3schools.com/bootstrap/bootstrap_modal.asp)
+* [Bootstrap Buttons](http://www.w3schools.com/bootstrap/bootstrap_buttons.asp)
+* [W3Schools: How to create a modal box](http://www.w3schools.com/howto/howto_css_modals.asp)
+* [JSON Howto](http://www.w3schools.com/json/json_eval.asp)
+* [Bootstrap JS Modals documentation](https://getbootstrap.com/javascript/#modals)
+* [jQuery API documentation](https://api.jquery.com/)
+
 
 
 

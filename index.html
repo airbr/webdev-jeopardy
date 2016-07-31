@@ -35,7 +35,7 @@
 </nav>
 
 <header id="header" class="topscreen">
-.
+
 </header>
 
 
@@ -53,7 +53,39 @@
   </div>
   <div class="panel-body" id="main-board">
     <div class="category col-md-2 col-md-offset-1">
-      <div class="well question">10</div>
+
+      <div class="well question">
+
+        <div>
+        <!-- Trigger modal -->
+        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">10</button>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Modal Header - HTML Category for $10:</h4>
+              </div>
+              <div class="modal-body">
+                <p>What is the expansion of HTML?</p>
+                <p id="question"></p>
+                <button type="button" class="btn-outline-secondary">1. Hypertext Markup Language</button>
+                <button type="button" class="btn-outline-secondary">2. Bogus answer</button>
+                <button type="button" class="btn-outline-secondary">3. Bogus answer</button>
+                <button type="button" class="btn-outline-secondary">4. Close enough</button>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
       <div class="well question">50</div>
       <div class="well question">100</div>
       <div class="well question">500</div>
@@ -89,16 +121,23 @@
     </div>
   </div>
   <div class="panel-footer">
-    <div class="pull-right"><h4>Score: <span id="score">0</span></h4></div>
+    <div class="pull-right"><h4>Score Player 1: <span id="score">0</span></h4></div>
+    <br>
+    <br>
+    <div class="pull-right"><h4>Score Player 2: <span id="score">0</span></h4></div>
     <div class="clearfix"></div>
         </div>
 </div>
 </div>
 
+
+
    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery-3.1.0.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
+
+<script src="js/main.js"></script>
 </body>
 
 </html>
