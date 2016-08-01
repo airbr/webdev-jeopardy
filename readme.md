@@ -5,11 +5,11 @@ Project scope:
 
 This project intends to meet the [spec defined for Project 1 in the course materials](https://github.com/ATL-WDI-Curriculum/projects/blob/master/project1.md).
 
-[The corresponding Trello for this game is contained within this URL](https://trello.com/b/FtyjyTlm/wdi-project-1-jeopardy-beau-murrah)
+[The corresponding Trello for this game is contained within](https://trello.com/b/FtyjyTlm/wdi-project-1-jeopardy-beau-murrah)
 
-See the Trello for more detailed consideration of the games design and evidence of the games production.
+See the Trello for more detailed consideration of the games design and evidence of the games (messy) production.
 
-[The game is hosted on Github at the following URL:](https://github.com/airbr/WDI7-Jeopardy)
+[The game is hosted on Github in the contained URL](https://github.com/airbr/WDI7-Jeopardy)
 
 Technologies used in this game include:
 
