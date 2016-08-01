@@ -1,17 +1,26 @@
 /*Jeopardy CSS*/
+.successanswer {
+    background-color: green;
+    font-size: 44px;
+}
+#currentplayer {
+  background-color: ;
+}
 .btn-outline-secondary {
   display: flex;
   flex-direction: row;
 }
-
 .top {
   height: 120px;
   width: 100%;
   background-color: red;
 }
-.topscreen {
-  background-color: red;
+.playeropt {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   width: 100vw;
+  align-content: center;
 }
 .question {
     height:100px;

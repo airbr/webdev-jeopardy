@@ -22,6 +22,7 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
+      <!--   To add confirm prompt to reset board -->
         <li class="active"><a href="#">Restart Game</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Github</a></li>
@@ -34,8 +35,11 @@
   </div>
 </nav>
 
-<header id="header" class="topscreen">
-
+<header>
+<div class="playeropt">
+  <button class="Player1">Player 1</button>
+  <button class="Player2">Player 2</button>
+</div>
 </header>
 
 
@@ -51,14 +55,18 @@
     <div class="text-center col-md-2"><h4>Bonus</h4></div>
     <div class="clearfix"></div> <!-- clearfix squares the header around the headings. it basically fixes everything -->
   </div>
+
+
   <div class="panel-body" id="main-board">
     <div class="category col-md-2 col-md-offset-1">
+
+
 
       <div class="well question">
 
         <div>
         <!-- Trigger modal -->
-        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">10</button>
+        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">$10</button>
         <!-- Modal -->
         <div class="modal fade" id="myModal" role="dialog">
           <div class="modal-dialog">
@@ -67,15 +75,14 @@
             <div class="modal-content">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Modal Header - HTML Category for $10:</h4>
+                <h4 class="modal-title">HTML Category for $10 <span class="currentplayer"><span></h4>
               </div>
               <div class="modal-body">
                 <p>What is the expansion of HTML?</p>
-                <p id="question"></p>
-                <button type="button" class="btn-outline-secondary">1. Hypertext Markup Language</button>
-                <button type="button" class="btn-outline-secondary">2. Bogus answer</button>
-                <button type="button" class="btn-outline-secondary">3. Bogus answer</button>
-                <button type="button" class="btn-outline-secondary">4. Close enough</button>
+                <button type="button" class="btn-outline-secondary correct">1. Hypertext Markup Language</button>
+                <button type="button" class="btn-outline-secondary incorrect">2. Bogus answer</button>
+                <button type="button" class="btn-outline-secondary incorrect">3. Bogus answer</button>
+                <button type="button" class="btn-outline-secondary incorrect">4. Close enough</button>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -84,7 +91,7 @@
           </div>
         </div>
       </div>
-  </div>
+      </div>
 
       <div class="well question">50</div>
       <div class="well question">100</div>
@@ -121,10 +128,10 @@
     </div>
   </div>
   <div class="panel-footer">
-    <div class="pull-right"><h4>Score Player 1: <span id="score">0</span></h4></div>
+    <div class="pull-right"><h4>Score Player 1: <span id="score1"></span></h4></div>
     <br>
     <br>
-    <div class="pull-right"><h4>Score Player 2: <span id="score">0</span></h4></div>
+    <div class="pull-right"><h4>Score Player 2: <span id="score2"></span></h4></div>
     <div class="clearfix"></div>
         </div>
 </div>
@@ -137,6 +144,7 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
 
+<!-- <script src="js/main.js"></script> -->
 <script src="js/main.js"></script>
 </body>
 
