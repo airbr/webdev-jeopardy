@@ -14,10 +14,78 @@ $('.incorrect').click(function(){
   $(score2).append('$-10');
 });
 
+/* Cred to Dr Mike VVV */
+
+var questions = [
+  {
+    prompt: 'Choose an EV',
+    options: [ 'Tesla Model S', 'Nissan Leaf', 'Chevy Bolt'],
+    correctAnswer: 'Tesla Model S'
+  },
+  {
+    prompt: 'Choose a fruit',
+    options: ['Apple', 'Orange', 'Banana', 'Peach'],
+    correctAnswer: 'Apple'
+  }
+];
+
+function submit() {
+  var selected = $(".modal-body input:checked").val();
+  alert('You selected ' + selected);
+}
+
+function getOptions(question) {
+  var $buttonDiv = $('<div class="btn-group" data-toggle="buttons"></div>');
+  question.options.forEach(function(opt) {
+    var $div = $('<div class="radio">');
+    var $label = $('<label class="radio-inline"></label');
+    var $input = $('<input type="radio" name="opts" value="' + opt + '">');
+
+    $label.append($input);
+    $label.append(opt);
+
+    $div.append($label);
+    $buttonDiv.append($div);
+  });
+  return $buttonDiv;
+}
+
+function showQuestion(event, $modal) {
+  var button = $(event.relatedTarget);  // Button that triggered the modal
+  var num = parseInt(button.data('num'));
+  var question = questions[num];
+  $modal.find('.modal-title').text(question.prompt);
+  $modal.find('.modal-body').empty().append(getOptions(question));
+}
+
+$(function() {
+  $("#myModal").on('show.bs.modal', function(event) {
+    showQuestion(event, $(this));
+  });
+});
 
 
 
-//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// VVVV Garbage text to hack the Gibson with VVVVV
+
+
 // $( "" ).click(function() {
 //   alert( "Handler for .click() called." );
 // });

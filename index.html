@@ -64,39 +64,49 @@
       <div class="well question">
         <div>
 
+              <!-- Credit to Dr Mike -->
+              <div class="bs-example">
+                <!-- Button HTML (to Trigger Modal) -->
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" data-num="0">Question 1</button>
+              <!--   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" data-num="1">Question 2</button> -->
 
+                <!-- Modal HTML -->
+                <div id="myModal" class="modal fade">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 class="modal-title">Modal Window</h4>
+                      </div>
+                      <div class="modal-body">
+              <!-- Example of what will be produced dynamically into the Modal:
 
-
-
-        <!-- Trigger modal  -->
-
-       <button type="button" class="btn btn-info btn-lg questnum" data-toggle="modal" data-target="#myModal" data-remote="Question-Template.html">$10</button>
-        <!-- Modal -->
-          <div class="modal fade" id="myModal" role="dialog">
-            <div class="modal-dialog">
-
-            <!-- Modal content-->
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title">HTML Category for $10 <span class="currentplayer"><span></h4>
+                        <div class="btn-group" id="carsSelect" data-toggle="buttons">
+                          <div class="radio">
+                              <label><input type="radio" name="cars" value="Tesla Model 3">Tesla Model 3</label>
+                          </div>
+                          <div class="radio">
+                            <label>
+                              <input type="radio" name="cars" value="leaf">Nissan Leaf
+                            </label>
+                          </div>
+                          <div class="radio">
+                            <label>
+                              <input type="radio" name="cars" value="bolt">Chevy Bolt
+                            </label>
+                          </div>
+                        </div>
+              -->
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" onclick="submit()">Submit</button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                  <div class="modal-body">
-                    <p>What is the expansion of HTML?</p>
-                    <p id="demo"></p>
-
-                    <button type="button" class="btn-outline-secondary correct">1. Hyper Text Markup Language</button>
-                    <button type="button" class="btn-outline-secondary incorrect">2. Holding Text Marker Language</button>
-                    <button type="button" class="btn-outline-secondary incorrect">3. Hyperlink Text Making Language</button>
-                    <button type="button" class="btn-outline-secondary incorrect">4. Holding Text Modal Loop</button>
-                  </div>
-                <!-- Modal Footer -->
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                  </div>
               </div>
-            </div>
-          </div>
+              <!--^^^ Dr Mike ^^^-->
+
         </div>
       </div>
 
