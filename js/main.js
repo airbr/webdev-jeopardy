@@ -16,6 +16,9 @@ $('.incorrect').click(function(){
   $(score2).append('$-10');
 });
 
+// Listen for game button clicks-
+// Add extra step find particular div that makes modal-
+// // Yaml? Tool for typing JSON?
 
 
 
