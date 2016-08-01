@@ -72,3 +72,4 @@ Bonus
 * A difference between Declarations vs. Expressions in Javascript ? Answer Function 
 declarations define functions without assigning them to variables. 
 * Use of !("Alert") is often considered bad practice, as browsers and users are hostile to pop-ups. What is one of the other two native Javascript popup functions? !confirm
+3

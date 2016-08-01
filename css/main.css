@@ -1,7 +1,14 @@
 /*Jeopardy CSS*/
 /* Credit to Dr Mike */
 /* ^^^^^^ */
-
+.btn-xlarge {
+    padding: 18px 28px;
+    font-size: 22px;
+    line-height: normal;
+    -webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+            border-radius: 8px;
+    }
 .radio {
   size: 30px;
   margin: 20px;
@@ -35,7 +42,7 @@
     vertical-align: middle;
     text-align: center;
     font-size: 1.5em;
-    padding-top: 35px;
+    padding-top: 15px;
     cursor: pointer;
 }
 h1 {

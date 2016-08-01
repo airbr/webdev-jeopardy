@@ -15,25 +15,40 @@ $('.incorrect').click(function(){
 });
 
 /* Cred to Dr Mike VVV */
-
 var questions = [
   {
-    prompt: 'Choose an EV',
-    options: [ 'Tesla Model S', 'Nissan Leaf', 'Chevy Bolt'],
-    correctAnswer: 'Tesla Model S'
+    prompt: 'What is the expansion of HTML?',
+    options: [ 'Hyper Text Markup Language', 'Holding Text Marker Language', 'Hyperlink Text Management Language', 'Holding Text Modal Language'],
+    correctAnswer: 'Hyper Text Markup Language'
   },
   {
-    prompt: 'Choose a fruit',
-    options: ['Apple', 'Orange', 'Banana', 'Peach'],
-    correctAnswer: 'Apple'
-  }
+    prompt: 'What is the current version of HTML?',
+    options: ['HTMLv5.1', 'HTML5', 'HTML2016', 'HTMLC'],
+    correctAnswer: 'HTML5'
+  },
+  {
+    prompt: 'What seperate language has largely replaced use of <style></style> elements?',
+    options: ['HTMLS Code', 'Style Sheet Language', 'CSS or Central Style Sheet', 'CSS or Cascading Style Sheets'],
+    correctAnswer: 'CSS or Cascading Style Sheets'
+  },
+  {
+    prompt: 'What new element type introduced in HTML5 is functionally the same as a Div?',
+    options: ['Semantic Tags', 'PseudoDivs', 'DivisionIDs', 'Division Notation'],
+    correctAnswer: 'Semantic Tags'
+  },
+  {
+    prompt: 'HTML is the principal source for attributes of Nodes in the DOM. Browsers do not usually allow cross-site actions but there is one major exception:',
+    options: ['Get Requests', 'Ping Commands', 'iFrames', 'XSS '],
+    correctAnswer: 'iFrames'
+  },
 ];
+
+/* Dr Mike VVV */
 
 function submit() {
   var selected = $(".modal-body input:checked").val();
   alert('You selected ' + selected);
 }
-
 function getOptions(question) {
   var $buttonDiv = $('<div class="btn-group" data-toggle="buttons"></div>');
   question.options.forEach(function(opt) {
@@ -64,7 +79,10 @@ $(function() {
   });
 });
 
+/* ^^^ Dr Mike ^^^ */
+$('#myModal').on('hidden.bs.modal', function (e) {
 
+})
 
 
 
