@@ -1,6 +1,12 @@
 /*Jeopardy CSS*/
 /* Credit to Dr Mike */
 /* ^^^^^^ */
+
+.radio {
+  size: 30px;
+  margin: 20px;
+  opacity: 50%;
+}
 .successanswer {
     background-color: green;
     font-size: 44px;
