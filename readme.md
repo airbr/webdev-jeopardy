@@ -13,10 +13,10 @@ See the Trello for more detailed consideration of the games design and evidence 
 
 Technologies used in this game include:
 
-HTML5
-CSS3
-Bootstrap 3.3.7
-JQuery/Ajax
+* HTML5
+* CSS3
+* Bootstrap 3.3.7
+* JQuery/Ajax
 
 
 Resources referred to included:
