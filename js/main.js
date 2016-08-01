@@ -4,23 +4,39 @@ console.log('JS Testing.');
 $('.btn-outline-secondary').click(function(){
    $(this).prop('disabled', true);
 });
-//
 $('.correct').click(function(){
   $(alert("Correct!"));
   $('.correct').toggleClass('successanswer');
   $(score1).append('$10');
 });
-//
 $('.incorrect').click(function(){
   $(alert("Nope."));
   $(score2).append('$-10');
 });
+
+
+
+
+
+
+//
+// $( "" ).click(function() {
+//   alert( "Handler for .click() called." );
+// });
+
 
 // Listen for game button clicks-
 // Add extra step find particular div that makes modal-
 // // Yaml? Tool for typing JSON?
 
 
+// $('#exampleModal').on('show.bs.modal', function (event) {
+//   var button = $(event.relatedTarget) // Button that triggered the modal
+//   var recipient = button.data('whatever') // Extract info from data-* attributes
+//   var modal = $(this)
+//   modal.find('.modal-title').text('New message to ' + recipient)
+//   modal.find('.modal-body input').val(recipient)
+// })
 
 
 

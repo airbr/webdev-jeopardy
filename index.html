@@ -43,9 +43,8 @@
 </div>
 </header>
 
-
+<!-- Body -->
 <body>
-
 <div class="container">
 <div class="panel panel-default">
   <div class="panel-heading">
@@ -56,15 +55,15 @@
     <div class="text-center col-md-2"><h4>Bonus</h4></div>
     <div class="clearfix"></div> <!-- clearfix squares the header around the headings -->
   </div>
-
   <div class="panel-body" id="main-board">
+
   <!-- Category 1 -->
     <div class="category col-md-2 col-md-offset-1">
-  <!-- Category 1 Question 1 -->
+  <!-- Category 1 Question 1 & Modal Template to be dynamically changed for other questions -->
       <div class="well question">
         <div>
         <!-- Trigger modal -->
-        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">$10</button>
+        <button type="button" class="btn btn-info btn-lg questnum" data-toggle="modal" data-target="#myModal" data-remote="Question-Template.html">$10</button>
         <!-- Modal -->
           <div class="modal fade" id="myModal" role="dialog">
             <div class="modal-dialog">
@@ -117,8 +116,8 @@
     <div class="category col-md-2">
 
       <div class="well question">
-      <!-- Testing - Realising Modals are instantiated, not seperated -->
-              <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">$10</button>
+      <!-- Test JS Category 3 Q 1 Button-->
+      <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">$10</button>
       </div>
       <div class="well question">50</div>
       <div class="well question">100</div>

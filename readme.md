@@ -17,6 +17,7 @@ Technologies used in this game include:
 * CSS3
 * Bootstrap 3.3.7
 * JQuery/Ajax
+* [Bower Package "Bootstrap 3 Dialog"](https://github.com/airbr/bootstrap3-dialog)
 
 
 Resources referred to included:
@@ -28,6 +29,9 @@ Resources referred to included:
 * [JSON Howto](http://www.w3schools.com/json/json_eval.asp)
 * [Bootstrap JS Modals documentation](https://getbootstrap.com/javascript/#modals)
 * [jQuery API documentation](https://api.jquery.com/)
+
+Credit to:
+
 
 
 
