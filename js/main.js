@@ -7,6 +7,7 @@ $('.btn-outline-secondary').click(function(){
 //
 $('.correct').click(function(){
   $(alert("Correct!"));
+  $('.correct').toggleClass('successanswer');
   $(score1).append('$10');
 });
 //
@@ -17,6 +18,26 @@ $('.incorrect').click(function(){
 
 
 
+
+
+
+
+// Get JSON Example ---
+
+// var text = '{"employees":[' +
+// '{"firstName":"John","lastName":"Doe" },' +
+// '{"firstName":"Anna","lastName":"Smith" },' +
+// '{"firstName":"Peter","lastName":"Jones" }]}';
+
+// obj = JSON.parse(text);
+// document.getElementById("demo").innerHTML =
+// obj.employees[2].firstName + " " + obj.employees[2].lastName;
+
+
+// //??? Fix found online for Modal bug issue with Bootstrap???
+// $('.modal').on('hidden.bs.modal', function (e) {
+//     $('.modal .modal-body').empty();
+// });
 
 
 // Jeopardy JS
@@ -37,9 +58,6 @@ $('.incorrect').click(function(){
 // $(
 
 
-
-
-
 // var text = '{"question":[' +
 // '{"answerA":"Hyper Text Markup Language"},' +
 // '{"answerB":"Bogus Answer"},' +
@@ -48,7 +66,6 @@ $('.incorrect').click(function(){
 
 // obj = JSON.parse(text);
 // document.getElementById("question").innerHTML = obj.question;
-
 
 
 // Code I barely understand, attemped to edit unsuccesfully //
