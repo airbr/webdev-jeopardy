@@ -1,21 +1,29 @@
 console.log('JS Testing.');
 
-// Making Answer buttons only clickable once
-$('.btn-outline-secondary').click(function(){
-   $(this).prop('disabled', true);
-});
-$('.correct').click(function(){
-  $(alert("Correct!"));
-  $('.correct').toggleClass('successanswer');
-  $(score1).append('$10');
-});
-$('.incorrect').click(function(){
-  $(alert("Nope."));
-  $(score2).append('$-10');
-});
+// // Making Answer buttons only clickable once
+// $('.btn-outline-secondary').click(function(){
+//    $(this).prop('disabled', true);
+// });
+// $('.correct').click(function(){
+//   $(alert("Correct!"));
+//   $('.correct').toggleClass('successanswer');
+//   $(score1).append('$10');
+// });
+// $('.incorrect').click(function(){
+//   $(alert("Nope."));
+//   $(score2).append('$-10');
+// });
+
+
+// // Player change Animation
+// $( "playertag" ).click(function() {
+//   $( this ).toggleClass( ".highlight" );
+// });
+
 
 /* Cred to Dr Mike VVV */
 var questions = [
+/* Category 1 Questions */
   {
     prompt: 'What is the expansion of HTML?',
     options: [ 'Hyper Text Markup Language', 'Holding Text Marker Language', 'Hyperlink Text Management Language', 'Holding Text Modal Language'],
@@ -41,14 +49,125 @@ var questions = [
     options: ['Get Requests', 'Ping Commands', 'iFrames', 'XSS '],
     correctAnswer: 'iFrames'
   },
+  /* Category 2 Questions */
+  {
+    prompt: 'What is the expansion of CSS?',
+    options: [ 'Cascading Style Sheets', 'Central Style Server', 'Control Set Styles', 'C Safe Server'],
+    correctAnswer: 'Cascading Style Sheets'
+  },
+  {
+    prompt: 'The "<Span> </Span>" has what kind of default property?',
+    options: ['set-length', 'block', 'timestamp', 'inline'],
+    correctAnswer: 'inline'
+  },
+  {
+    prompt: 'The * selector applies to what?',
+    options: ['Everything', 'Wildcard elements', 'Multiplication Functions', 'Elements with the Id of *'],
+    correctAnswer: 'Everything'
+  },
+  {
+    prompt: 'What feature recently introduced in CSS 3 addresses issues with "floats"?',
+    options: ['Center Flagpoints', 'Flexbox', 'Flexpoints', 'FloatV2.0'],
+    correctAnswer: 'Flexbox'
+  },
+  {
+    prompt: 'CSS is hard. What is one feature that makes it hard compared to other languages? ',
+    options: ['Lack of Case Examples', 'No Error Output', 'Inclusion of complex variable functions', 'Lack of documentation'],
+    correctAnswer: 'No Error Output'
+  },
+  /* Category 3 Questions */
+ {
+    prompt: 'Which is a coding language or library not relevant to modern Javascript?',
+    options: ['Java', 'ECMAScript', 'Ajax', 'JQuery' ],
+    correctAnswer: 'Java'
+  },
+  {
+    prompt: 'Javascript is usually described as a " "-based language?',
+    options: ['Relational', 'COBOL', 'Object', 'Directional'],
+    correctAnswer: 'Object'
+  },
+  {
+    prompt: 'JSON is: ',
+    options: ['A Javscript engine', 'A text format readable by Javascript', 'A Javascript library', 'A Javscript function'],
+    correctAnswer: 'A text format readable by Javscript'
+  },
+  {
+    prompt: 'Angular JS is an example of:',
+    options: ['A JS Framework', 'an open-source, cross-platform runtime environment for developing server-side web applications', 'A JS library', 'An AJAX library'],
+    correctAnswer: 'A JS Framework'
+  },
+  {
+    prompt: 'Imagine one hundred Samurai are standing in a circle each holding a sword. The first samurai kills the samurai next to them (the second).  The third Samurai then kills the forth Samurai and this process of Samurai killing the Samurai directly next to them continues until there is only one Samurai left standing at the end. You write a JS program with these Samurai in an Array and use functions to determine which of the Samurai will be the last one alive. What JS functions are required to do this?',
+    options: ['For Loop, If Else Function, Array Shift, Array Splice', 'Fizzbuzz, Else Statements', 'Loop Functions with Calculator Integers', 'Array Reduce'],
+    correctAnswer: 'For Loop, If Else Function, Array Shift, Array Splice'
+  },
+  /* Category 4 Questions */
+ {
+    prompt: 'The Terminal or command line is an example of a?',
+    options: ['Interconnected Network', 'Read-Eval-Print-Loop', 'C++ Library Object', 'Skynet' ],
+    correctAnswer: 'Read-Eval-Print-Loop'
+  },
+  {
+    prompt: 'UNIX was added relatively later into what popular propietary operating system?',
+    options: ['Windows 10', 'Linux Mint', 'Mac OS X', 'Ubuntu'],
+    correctAnswer: 'Mac OS X'
+  },
+  {
+    prompt: 'The command "man x" would do what?',
+    options: ['Bring up the task manager for x', 'Modularize x', 'Bring up the manual page for x', 'Make x mandatory on startup'],
+    correctAnswer: 'Bring up the manual page for x'
+  },
+    {
+    prompt: 'Someone on the internet tells you to enter a "rm -rf" command into your terminal. This would:',
+    options: ['Remake your filedomains', 'Rename your file register', 'Recursively rename all your files with the tag rm', 'Irreparably damage your file system'],
+    correctAnswer: 'Irreparably damage your file system'
+  },
+  {
+    prompt: 'The GREP command allows a user to:',
+    options: ['Quickly search files for specific items of text', 'Grab-Read-Evaluate-Loop', 'Gauge RAM event parameters', 'Group related events in the processor'],
+    correctAnswer: 'Quickly search files for specific items of text'
+  },
+/* Category 5 Questions */
+ {
+      prompt: 'Use of "Alert" popup windows is often considered bad practice as browsers and users are hostile to pop-ups. What are the other two native Javascript popup functions?',
+    options: ['Warning, Confirm', 'Confirm, Refresh', 'Prompt, Confirm', 'Prompt, Notice'],
+    correctAnswer: 'Prompt, Confirm'
+  },
+  {
+    prompt: 'The man page for Git describes it as:',
+    options: ['That stupid content tracker', 'A Content Version Tracker', 'General-Index-Tracker', 'A Revision Editor'],
+    correctAnswer: 'That stupid content tracker'
+  },
+  {
+    prompt: 'The command "man x" would do what?',
+    options: ['Bring up the task manager for x', 'Modularize x', 'Bring up the manual page for x', 'Make x mandatory on startup'],
+    correctAnswer: 'Bring up the manual page for x'
+  },
+    {
+    prompt: 'Travel to the following URL: . This is an example of a:',
+    options: ['CSS Only Animation', 'JS Animation', 'HTML Complex Animation', 'REPL Animation'],
+    correctAnswer: 'CSS Only Animation'
+  },
+  {
+    prompt: 'What is an early computer language famous for being designed by Government and Business without input from computer scientists?',
+    options: ['MS Office', 'Telnet', 'COBOL', 'C--' ],
+    correctAnswer: 'COBOL'
+  },
 ];
-
-/* Dr Mike VVV */
 
 function submit() {
   var selected = $(".modal-body input:checked").val();
   alert('You selected ' + selected);
+  console.log("The total No. of questions is: " + questions.length);
+  for (i = 0; i < questions.length; i++) {
+    if ( selected === questions[i].correctAnswer ) {
+      console.log("You selected the correct answer:" + questions[i].correctAnswer);
+    } else if ( questions[i].correctAnswer !== selected ) {
+      console.log("You selected the wrong answer");
+    }
+  }
 }
+
 function getOptions(question) {
   var $buttonDiv = $('<div class="btn-group" data-toggle="buttons"></div>');
   question.options.forEach(function(opt) {
@@ -71,6 +190,8 @@ function showQuestion(event, $modal) {
   var question = questions[num];
   $modal.find('.modal-title').text(question.prompt);
   $modal.find('.modal-body').empty().append(getOptions(question));
+  var success = question.correctAnswer;
+  console.log("The correct answer is " + success);
 }
 
 $(function() {
@@ -80,11 +201,9 @@ $(function() {
 });
 
 /* ^^^ Dr Mike ^^^ */
-$('#myModal').on('hidden.bs.modal', function (e) {
-
-})
-
-
+$("#myModal").on('hidden.bs.modal', function () {
+            console.log('The modal is now hidden.');
+    });
 
 
 
@@ -101,7 +220,7 @@ $('#myModal').on('hidden.bs.modal', function (e) {
 
 
 
-// VVVV Garbage text to hack the Gibson with VVVVV
+// VVVV Garbage file text to hack the Gibson with VVVVV
 
 
 // $( "" ).click(function() {

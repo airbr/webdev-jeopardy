@@ -1,6 +1,16 @@
 /*Jeopardy CSS*/
 /* Credit to Dr Mike */
 /* ^^^^^^ */
+
+
+.playertag {
+    color: white;
+ }
+.highlight {
+  color: green;
+  background-color: green;
+}
+
 .btn-xlarge {
     padding: 18px 28px;
     font-size: 22px;
