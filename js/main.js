@@ -158,15 +158,31 @@ var questions = [
 function submit() {
   var selected = $(".modal-body input:checked").val();
   alert('You selected ' + selected);
-  console.log("The total No. of questions is: " + questions.length);
+  // console.log("The total No. of questions is: " + questions.length);
   for (i = 0; i < questions.length; i++) {
     if ( selected === questions[i].correctAnswer ) {
       console.log("You selected the correct answer:" + questions[i].correctAnswer);
-    } else if ( questions[i].correctAnswer !== selected ) {
+      var success = i;
+      console.log(success);
+    }
+    if ( selected !== questions[i].correctAnswer ) {
       console.log("You selected the wrong answer");
     }
   }
 }
+$("#playerbtn").click(function(){
+  var currentplayer = "Player1";
+  console.log(currentplayer + " is the variable currentplayer");
+});
+$("#playerbtn2").click(function(){
+ var currentplayer = "Player2";
+  console.log(currentplayer + " is the variable currentplayer");
+});
+$(function() {
+  var score1 = $("#score1").append("$0");
+  var score2 = $("#score2").append("$0");
+});
+
 
 function getOptions(question) {
   var $buttonDiv = $('<div class="btn-group" data-toggle="buttons"></div>');
@@ -204,13 +220,6 @@ $(function() {
 $("#myModal").on('hidden.bs.modal', function () {
             console.log('The modal is now hidden.');
     });
-
-
-
-
-
-
-
 
 
 

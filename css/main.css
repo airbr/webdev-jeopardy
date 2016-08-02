@@ -1,8 +1,7 @@
 /*Jeopardy CSS*/
-/* Credit to Dr Mike */
-/* ^^^^^^ */
 
 
+/* Player interactive elements */
 .playertag {
     color: white;
  }
@@ -10,7 +9,6 @@
   color: green;
   background-color: green;
 }
-
 .btn-xlarge {
     padding: 18px 28px;
     font-size: 22px;
@@ -19,18 +17,42 @@
        -moz-border-radius: 8px;
             border-radius: 8px;
     }
-.radio {
-  size: 30px;
-  margin: 20px;
-  opacity: 50%;
 }
-.successanswer {
-    background-color: green;
-    font-size: 44px;
+.currentturn {
+  background-color: red;
+  color: red;
 }
-#currentplayer {
-  background-color: ;
+
+#playerbtn:active {
+  color: red;
+  background-color: red;
 }
+#playerbtn2:active {
+  color: green;
+  background-color: green;
+}
+/*input[type="radio"] {
+  size: 500px, 500px, 500px, 500px;
+  color: red;
+  background-color: red;
+}
+*/
+
+/* Key formatting of game board */
+.button {
+  height: 100%;
+  width: 100%;
+}
+.btn-xlarge {
+    height: 100%;
+    width: 100%;
+    padding: 18px 28px;
+    font-size: 22px;
+    line-height: normal;
+    -webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+            border-radius: 8px;
+    }
 .btn-outline-secondary {
   display: flex;
   flex-direction: row;
@@ -55,6 +77,16 @@
     padding-top: 15px;
     cursor: pointer;
 }
+.gametitle {
+  display: flex;
+  align-items: center;
+}
+#headline {
+  font-size: 30px;
+}
 h1 {
   color: red;
+}
+p {
+font-size: 20px;
 }
