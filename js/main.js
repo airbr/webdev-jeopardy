@@ -149,41 +149,64 @@ var questions = [
     correctAnswer: 'CSS Only Animation'
   },
   {
-    prompt: 'What is an early computer language famous for being designed by Government and Business without input from computer scientists?',
+    prompt: 'What is an early computer language famous for being designed by Government and Business without much input from computer scientists?',
     options: ['MS Office', 'Telnet', 'COBOL', 'C--' ],
     correctAnswer: 'COBOL'
-  },
-];
-
-function submit() {
-  var selected = $(".modal-body input:checked").val();
-  alert('You selected ' + selected);
-  // console.log("The total No. of questions is: " + questions.length);
-  for (i = 0; i < questions.length; i++) {
-    if ( selected === questions[i].correctAnswer ) {
-      console.log("You selected the correct answer:" + questions[i].correctAnswer);
-      var success = i;
-      console.log(success);
-    }
-    if ( selected !== questions[i].correctAnswer ) {
-      console.log("You selected the wrong answer");
-    }
   }
-}
+];
+var currentplayer = "Player1";
+
+var score1 = 0;
+var score2 = 0;
+
 $("#playerbtn").click(function(){
   var currentplayer = "Player1";
   console.log(currentplayer + " is the variable currentplayer");
+  console.log(score1);
 });
 $("#playerbtn2").click(function(){
  var currentplayer = "Player2";
   console.log(currentplayer + " is the variable currentplayer");
+  console.log(score2);
 });
 $(function() {
   var score1 = $("#score1").append("$0");
   var score2 = $("#score2").append("$0");
 });
+function submit() {
+  var selected = $(".modal-body input:checked").val();
+      for (i = 0; i < questions.length; i++) {
+        if ( selected === questions[i].correctAnswer ) {
+          console.log(selected + " was selected");
+          console.log("You selected the correct answer:" + questions[i].correctAnswer);
+          var scs = i;
+          console.log("The current question in index is: " + scs);
 
-
+              if ( scs === 0 || scs === 5 || scs === 10 || scs === 15 || scs === 20 ) {
+                score1 = score1 + 10;
+                console.log(score1);
+              } else if ( scs === 1 || scs === 6 || scs === 11 || scs === 16 || scs === 21 ) {
+                score1 = score1 + 50;
+                console.log(score1);
+              } else if ( scs === 2 || scs === 7 || scs === 12 || scs === 17 || scs === 22 ) {
+                score1 = score1 + 100;
+                console.log(score1);
+              } else if ( scs === 3 || scs === 8 || scs === 13 || scs === 18 || scs === 23 ) {
+                score1 = score1 + 500;
+                console.log(score1);
+              } else if ( scs === 4 || scs === 9 || scs === 14 || scs === 19 || scs === 24 ) {
+                score1 = score1 + 1000;
+                console.log(score1);
+              }
+          }
+      for (i = 0; i < questions.length; i++) {
+      if ( selected !== questions[i].correctAnswer ) {
+         console.log( selected + " was the wrong answer");
+         break;
+   }
+  }
+ }
+}
 function getOptions(question) {
   var $buttonDiv = $('<div class="btn-group" data-toggle="buttons"></div>');
   question.options.forEach(function(opt) {
@@ -199,7 +222,6 @@ function getOptions(question) {
   });
   return $buttonDiv;
 }
-
 function showQuestion(event, $modal) {
   var button = $(event.relatedTarget);  // Button that triggered the modal
   var num = parseInt(button.data('num'));
@@ -209,17 +231,23 @@ function showQuestion(event, $modal) {
   var success = question.correctAnswer;
   console.log("The correct answer is " + success);
 }
-
 $(function() {
   $("#myModal").on('show.bs.modal', function(event) {
     showQuestion(event, $(this));
   });
 });
-
 /* ^^^ Dr Mike ^^^ */
 $("#myModal").on('hidden.bs.modal', function () {
             console.log('The modal is now hidden.');
     });
+ $('.modal-body input:checked').submit(function() {
+    $('#myModal').modal('toggle');
+    return false;
+});
+
+
+
+
 
 
 
@@ -230,6 +258,21 @@ $("#myModal").on('hidden.bs.modal', function () {
 
 
 // VVVV Garbage file text to hack the Gibson with VVVVV
+
+
+      // // for (i = i; i < questions.length; i++) {
+      // //   if ( i === 0||5||10||15||20 ) {
+      // //   console.log("Add $10");
+      // //   } else if ( i === 1||6||11||16||21 ) {
+      // //   console.log("Add $50");
+      // //   } else if ( i === 2||7||12||17||22 ) {
+      // //   console.log("Add $100");
+      // //   } else if ( i === 3||8||13||18||23 ) {
+      // //   console.log("Add $500");
+      // //   } else if ( i === 4||9||14||19||24 ) {
+      //   console.log("Add $1000");
+      //   }
+
 
 
 // $( "" ).click(function() {
