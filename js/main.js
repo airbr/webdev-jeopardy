@@ -154,7 +154,7 @@ var questions = [
     cashPrize: 1000
   }
 ];
-// Buzzer Function:
+// Buzzer & Chaching sound functions:
 var buzzer = document.getElementById("buzzer");
 buzzer = window.buzzer;
 function playbuzzer() {
@@ -163,7 +163,6 @@ function playbuzzer() {
 function pausebuzzer() {
     buzzer.pause();
 }
-// buzzer.play();
 var chaching = document.getElementById("chaching");
 chaching = window.chaching;
 function playchaching() {
@@ -172,8 +171,6 @@ function playchaching() {
 function pausechaching() {
     chaching.pause();
 }
-
-
 // Scoreboard global variable hoisted from function submit, I think so anyways:
 var score = 0;
 //
@@ -257,7 +254,6 @@ $("#myModal").on('hidden.bs.modal', function () {
     $('#myModal').modal('toggle');
     return false;
 });
-
 
 
 // VVVV Garbage file text to hack the Gibson with VVVVV
