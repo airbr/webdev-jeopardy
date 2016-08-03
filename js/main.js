@@ -164,6 +164,15 @@ function pausebuzzer() {
     buzzer.pause();
 }
 // buzzer.play();
+var chaching = document.getElementById("chaching");
+chaching = window.chaching;
+function playchaching() {
+    chaching.play();
+}
+function pausechaching() {
+    chaching.pause();
+}
+
 
 // Scoreboard global variable hoisted from function submit, I think so anyways:
 var score = 0;
@@ -191,6 +200,7 @@ function submit(a, b) {
     console.log(selected + " was selected");
     console.log("You selected the correct answer:" + questions[window.currentQuestion].correctAnswer);
     alert('You won ' + '$'+ questions[window.currentQuestion].cashPrize + "!");
+    chaching.play();
     window.addprize = questions[window.currentQuestion].cashPrize;
     score = score + window.addprize;
     console.log(score);
