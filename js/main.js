@@ -195,7 +195,7 @@ function submit(a, b) {
   if ( selected === questions[window.currentQuestion].correctAnswer ) {
     console.log(selected + " was selected");
     console.log("You selected the correct answer:" + questions[window.currentQuestion].correctAnswer);
-    alert('You won ' + '$'+ questions[window.currentQuestion].cashPrize + "!");
+    // alert('You won ' + '$'+ questions[window.currentQuestion].cashPrize + "!");
     chaching.play();
     window.addprize = questions[window.currentQuestion].cashPrize;
     score = score + window.addprize;
@@ -206,7 +206,7 @@ function submit(a, b) {
   if ( selected !== questions[window.currentQuestion].correctAnswer ) {
     console.log(selected + " was selected");
     console.log("You selected the wrong answer:" + questions[window.currentQuestion].correctAnswer);
-    alert('You lost ' + '$' + questions[window.currentQuestion].cashPrize + "!");
+    // alert('You lost ' + '$' + questions[window.currentQuestion].cashPrize + "!");
     buzzer.play();
     window.subprize = questions[window.currentQuestion].cashPrize;
     score = score - window.subprize;
