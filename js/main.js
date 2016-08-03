@@ -162,7 +162,7 @@ function submit() {
           var scs = i;
         }
           else if ( selected !== questions[i].correctAnswer ) {
-            console.log("You chose the wrong answer.");
+            console.log("You chose the wrong answer for: " + scs);
             return;
         }
     }
