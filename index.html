@@ -11,15 +11,15 @@
  <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+<div class="container-fluid">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Jeopardy</a>
-    </div>
+    </button>
+    <a class="navbar-brand" href="#">Jeopardy</a>
+  </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active">
@@ -35,18 +35,21 @@
 </nav>
 
 <header>
-<div id="currentplayer" class="btn btn-primary btn-block"><p><span id="headline">WDI Jeopardy</span></p></button></div>
-
-<div class="playeropt">
+<!-- <div id="currentplayer" class="btn btn-primary btn-block"><p><span id="headline">Current Player</span></p></button></div>
+  <div class="playeropt">
 <br>
-<button id="playerbtn" type="button" class="btn btn-primary btn-block playertag"><p>Player1</p></button>
+  <button id="playerbtn" type="button" class="btn btn-primary btn-block playertag"><p>Player1</p></button>
 <br>
-<button id="playerbtn2" type="button" class="btn btn-primary btn-block playertag"><p>Player2</p></button>
-</div>
+  <button id="playerbtn2" type="button" class="btn btn-primary btn-block playertag"><p>Player2</p></button>
+</div> -->
 </header>
 
 <!-- Body -->
 <body>
+<div class="logos">
+    <img src="css/images/WDI.png" alt="WDI Logo" id="wdilogo">
+    <img src="css/images/Jeopardy.png" alt="Jeopardy Logo" id="topjlogo" id="wdilogo">
+</div>
 <div class="container">
 <div class="panel panel-default">
   <div class="panel-heading">
@@ -82,7 +85,7 @@
                             <div class="modal-body">
                           </div>
                         <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" onclick="submit()">Submit</button>
+                        <button id="closesubmit" type="button" class="btn btn-primary clickable" onclick="submit()">Submit</button>
                       </div>
                     </div>
                   </div>
