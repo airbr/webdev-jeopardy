@@ -203,9 +203,9 @@ function submit() {
       if ( selected !== questions[i].correctAnswer ) {
          console.log( selected + " was the wrong answer");
          break;
-   }
+         }
+      }
   }
- }
 }
 function getOptions(question) {
   var $buttonDiv = $('<div class="btn-group" data-toggle="buttons"></div>');
