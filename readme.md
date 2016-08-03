@@ -1,6 +1,11 @@
 * This is the ReadMe for a Jeopardy game by Beau Murrah created for Project 1 of WDI7, Atlanta.
+
 * Credit is given to Dr Mike Hopper, Emily Reese and Andrea Airall for their assistance in production. Particularly Dr Hopper for assistance writing two key Javascript functions.
+
 --
+
+### Current version: V1.2
+
 
 This project intends to meet the [spec defined for Project 1 in the course materials](https://github.com/ATL-WDI-Curriculum/projects/blob/master/project1.md).
 
@@ -28,13 +33,6 @@ Resources referred to included:
 * [JSON Howto](http://www.w3schools.com/json/json_eval.asp)
 * [Bootstrap JS Modals documentation](https://getbootstrap.com/javascript/#modals)
 * [jQuery API documentation](https://api.jquery.com/)
-
-## Notes on V1.0MVP
-
-The major function that I believe is missing is the ability to track score and switch between players. Currently a game could be played with two players but would require pencil and paper to keep the score.
-
-
-
 
 
 
