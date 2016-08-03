@@ -1,5 +1,5 @@
 console.log('Main.JS on.');
-/* Cred to Dr Mike VVV */
+/* Credot to Dr Mike & Andrea Airall & Emily Reese for significant help VVV */
 var questions = [
 /* Category 1 Questions */
   {
@@ -154,18 +154,12 @@ var questions = [
   }
 ];
 
-
-
 // Scoreboard in production:
-// var currentplayer = "Player1";
-var score = 0;
-// var score1 = 0;
-// var score2 = 0;
 
-// $(function() {
-//   var score1 = $("#score1").append();
-//   var score2 = $("#score2").append();
-// });
+var score = 0;
+//Display current score
+//#score1
+// $('#score1').html(score);
 
 $(function() {
    // Hide the Modal after submit
@@ -173,6 +167,7 @@ $(function() {
     $("#myModal").modal("hide");
     });
 });
+
 $(function() {
   // Remove Element after click
   $(".btn-xlarge").click(function() {
@@ -180,6 +175,7 @@ $(function() {
     $(this).remove();
     });
 });
+
  // Submit Question Answer
 function submit(a, b) {
   var selected = $(".modal-body input:checked").val();
@@ -193,6 +189,7 @@ function submit(a, b) {
     window.addprize = questions[window.currentQuestion].cashPrize;
     score = score + window.addprize;
     console.log(score);
+    $('#score1').html(score);
   }
   // Determine if incorrect answer was chosen and alert prize
   if ( selected !== questions[window.currentQuestion].correctAnswer ) {
@@ -202,8 +199,10 @@ function submit(a, b) {
     window.subprize = questions[window.currentQuestion].cashPrize;
     score = score - window.subprize;
     console.log(score);
+    $('#score1').html(score);
   }
 }
+// Get question info from array, prepare
 function getOptions(question) {
   var $buttonDiv = $('<div id="disableb" class="btn-group" data-toggle="buttons"></div>');
   question.options.forEach(function(opt) {
@@ -219,6 +218,7 @@ function getOptions(question) {
   });
   return $buttonDiv;
 }
+// Populate modal window with specific question
 function showQuestion(event, $modal) {
   var button = $(event.relatedTarget);  // Button that triggered the modal
   var num = parseInt(button.data('num'));
@@ -228,6 +228,7 @@ function showQuestion(event, $modal) {
   $modal.find('.modal-title').text(question.prompt);
   $modal.find('.modal-body').empty().append(getOptions(question));
 }
+// Modal show/close functions
 $(function() {
   $("#myModal").on('show.bs.modal', function(event) {
     showQuestion(event, $(this));
