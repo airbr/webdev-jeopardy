@@ -13,7 +13,6 @@ var questions = [
     options: ['HTMLv5.1', 'HTML5', 'HTML2016', 'HTMLC'],
     correctAnswer: 'HTML5',
     cashPrize: 50
-
   },
   {
     prompt: 'What seperate language has largely replaced use of <style></style> elements?',
@@ -108,7 +107,7 @@ var questions = [
   {
     prompt: 'The command "man x" would?',
     options: ['Bring up the task manager for x', 'Modularize x', 'Attempt to bring up the manual page for x', 'Make x mandatory on startup'],
-    correctAnswer: 'Bring up the manual page for x',
+    correctAnswer: 'Attempt to bring up the manual page for x',
     cashPrize: 100
   },
   {
@@ -136,9 +135,9 @@ var questions = [
     cashPrize: 50
   },
   {
-    prompt: 'The command "man x" would do what?',
-    options: ['Bring up the task manager for x', 'Modularize x', 'Bring up the manual page for x', 'Make x mandatory on startup'],
-    correctAnswer: 'Bring up the manual page for x',
+    prompt: 'What version of what coding language introduced the audio function contained in this page?',
+    options: ['ECMAScript', 'MP3ML', 'HTML5', 'WavML'],
+    correctAnswer: 'HTML5',
     cashPrize: 100
   },
     {
