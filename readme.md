@@ -1,10 +1,10 @@
 * This is the ReadMe for a Jeopardy game by Beau Murrah created for Project 1 of WDI7, Atlanta.
 
-* Credit is given to Dr Mike Hopper, Emily Reese and Andrea Airall for their assistance in production. Particularly Dr Hopper for assistance writing two key Javascript functions.
+* Credit is given to Dr Mike Hopper, Emily Reese, Andrea Airall and Chris Burgess for their assistance in production. Particularly Dr Hopper for assistance writing two key Javascript functions and Chris Burgess for re-writing one function to make a variable global that made this work.
 
 --
 
-### Current version: V1.2
+### Current version: V1.3
 
 
 This project intends to meet the [spec defined for Project 1 in the course materials](https://github.com/ATL-WDI-Curriculum/projects/blob/master/project1.md).
