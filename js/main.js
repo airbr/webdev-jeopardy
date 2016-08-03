@@ -190,7 +190,7 @@ function submit(a, b) {
     window.addprize = questions[window.currentQuestion].cashPrize;
     score = score + window.addprize;
     console.log(score);
-    $('#score1').html(score);
+    $('#score1').html("$"+score);
   }
   // Determine if incorrect answer was chosen and alert prize
   if ( selected !== questions[window.currentQuestion].correctAnswer ) {
@@ -200,7 +200,7 @@ function submit(a, b) {
     window.subprize = questions[window.currentQuestion].cashPrize;
     score = score - window.subprize;
     console.log(score);
-    $('#score1').html(score);
+    $('#score1').html("$"+score);
   }
 }
 // Get question info from array, prepare

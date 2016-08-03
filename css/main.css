@@ -1,27 +1,17 @@
 /*Jeopardy CSS*/
 
-
-/* Player interactive elements */
-.playertag {
+/* Player interactive elements tbc*/
+/*.playertag {
     color: white;
  }
 .highlight {
   color: green;
   background-color: green;
 }
-.btn-xlarge {
-    padding: 18px 28px;
-    font-size: 22px;
-    line-height: normal;
-    -webkit-border-radius: 8px;
-       -moz-border-radius: 8px;
-            border-radius: 8px;
-}
 .currentturn {
   background-color: red;
   color: red;
 }
-
 #playerbtn:active {
   color: red;
   background-color: red;
@@ -29,7 +19,8 @@
 #playerbtn2:active {
   color: green;
   background-color: green;
-}
+}*/
+/* Content display */
 .container-fluid {
   max-width: 900px
 }
@@ -42,6 +33,10 @@
   max-height: 256px;
   width: auto;
 }
+#score1 {
+  color: green;
+  font-size: 30px;
+}
 /* Key formatting of game board */
 .navbar-header {
   max-width: 900px;
@@ -51,15 +46,20 @@
   width: 100%;
 }
 .btn-xlarge {
+    color: white;
     height: 100%;
     width: 100%;
     padding: 18px 28px;
-    font-size: 22px;
+    font-size: 24px;
     line-height: normal;
     -webkit-border-radius: 8px;
        -moz-border-radius: 8px;
             border-radius: 8px;
     }
+.btn-xlarge:hover {
+    color:red;
+    background-color: white;
+}
 .btn-outline-secondary {
   display: flex;
   flex-direction: row;
@@ -90,6 +90,10 @@
 }
 #headline {
   font-size: 30px;
+}
+.panel-footer {
+  display: flex;
+  justify-content: space-between;
 }
 h1 {
   color: red;
