@@ -106,8 +106,8 @@ var questions = [
     cashPrize: 50
   },
   {
-    prompt: 'The command "man x" would do what?',
-    options: ['Bring up the task manager for x', 'Modularize x', 'Bring up the manual page for x', 'Make x mandatory on startup'],
+    prompt: 'The command "man x" would?',
+    options: ['Bring up the task manager for x', 'Modularize x', 'Attempt to bring up the manual page for x', 'Make x mandatory on startup'],
     correctAnswer: 'Bring up the manual page for x',
     cashPrize: 100
   },
@@ -142,7 +142,7 @@ var questions = [
     cashPrize: 100
   },
     {
-    prompt: 'The rolling box saying "CSS" on the game page is an example of a:',
+    prompt: 'The rolling box saying "CSS" on the game page is an example of:',
     options: ['CSS Only Animation', 'JS Animation', 'HTML Complex Animation', 'REPL Animation'],
     correctAnswer: 'CSS Only Animation',
     cashPrize: 500
