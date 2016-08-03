@@ -1,6 +1,4 @@
 console.log('JS Testing.');
-
-
 /* Cred to Dr Mike VVV */
 var questions = [
 /* Category 1 Questions */
@@ -156,43 +154,13 @@ $(function() {
 function submit() {
   var selected = $(".modal-body input:checked").val();
     for (i = 0; i < questions.length; i++) {
-        if ( selected === questions[i].correctAnswer ) {
-          console.log(selected + " was selected");
-          console.log("You selected the correct answer:" + questions[i].correctAnswer);
-          var scs = i;
-        }
-          else if ( selected !== questions[i].correctAnswer ) {
-            console.log("You chose the wrong answer for: " + scs);
-            return;
-        }
+      if ( selected === questions[i].correctAnswer ) {
+        console.log(selected + " was selected");
+        console.log("You selected the correct answer:" + questions[i].correctAnswer);
+        var scs = i;
+      }
     }
 }
-
-
-//         if ( scs === 0 || scs === 5 || scs === 10 || scs === 15 || scs === 20 ) {
-//             score1 = score1 + 10;
-//             console.log(score1);
-//           } else if ( scs === 1 || scs === 6 || scs === 11 || scs === 16 || scs === 21 ) {
-//             score1 = score1 + 50;
-//             console.log(score1);
-//           } else if ( scs === 2 || scs === 7 || scs === 12 || scs === 17 || scs === 22 ) {
-//             score1 = score1 + 100;
-//             console.log(score1);
-//           } else if ( scs === 3 || scs === 8 || scs === 13 || scs === 18 || scs === 23 ) {
-//             score1 = score1 + 500;
-//             console.log(score1);
-//           } else if ( scs === 4 || scs === 9 || scs === 14 || scs === 19 || scs === 24 ) {
-//             score1 = score1 + 1000;
-//             console.log(score1);
-//           }
-//       console.log(selected + "= selected");
-//       for (i = 0; i < questions.length; i++) {
-//       if ( selected !== questions[i].correctAnswer ) {
-//          console.log( selected + "was the wrong answer");
-//          }
-//       }
-//   }
-// }
 function getOptions(question) {
   var $buttonDiv = $('<div class="btn-group" data-toggle="buttons"></div>');
   question.options.forEach(function(opt) {
@@ -232,6 +200,8 @@ $("#myModal").on('hidden.bs.modal', function () {
 });
 
 
+// VVVV Garbage file text to hack the Gibson with VVVVV
+
 
 
 // // Making Answer buttons only clickable once
@@ -256,29 +226,52 @@ $("#myModal").on('hidden.bs.modal', function () {
 
 
 
+// // Making Answer buttons only clickable once
+// $('.btn-outline-secondary').click(function(){
+//    $(this).prop('disabled', true);
+// });
+// $('.correct').click(function(){
+//   $(alert("Correct!"));
+//   $('.correct').toggleClass('successanswer');
+//   $(score1).append('$10');
+// });
+// $('.incorrect').click(function(){
+//   $(alert("Nope."));
+//   $(score2).append('$-10');
+// });
+
+
+// // Player change Animation
+// $( "playertag" ).click(function() {
+//   $( this ).toggleClass( ".highlight" );
+// });
 
 
 
-
-
-
-
-// VVVV Garbage file text to hack the Gibson with VVVVV
-
-
-      // // for (i = i; i < questions.length; i++) {
-      // //   if ( i === 0||5||10||15||20 ) {
-      // //   console.log("Add $10");
-      // //   } else if ( i === 1||6||11||16||21 ) {
-      // //   console.log("Add $50");
-      // //   } else if ( i === 2||7||12||17||22 ) {
-      // //   console.log("Add $100");
-      // //   } else if ( i === 3||8||13||18||23 ) {
-      // //   console.log("Add $500");
-      // //   } else if ( i === 4||9||14||19||24 ) {
-      //   console.log("Add $1000");
-      //   }
-
+//         if ( scs === 0 || scs === 5 || scs === 10 || scs === 15 || scs === 20 ) {
+//             score1 = score1 + 10;
+//             console.log(score1);
+//           } else if ( scs === 1 || scs === 6 || scs === 11 || scs === 16 || scs === 21 ) {
+//             score1 = score1 + 50;
+//             console.log(score1);
+//           } else if ( scs === 2 || scs === 7 || scs === 12 || scs === 17 || scs === 22 ) {
+//             score1 = score1 + 100;
+//             console.log(score1);
+//           } else if ( scs === 3 || scs === 8 || scs === 13 || scs === 18 || scs === 23 ) {
+//             score1 = score1 + 500;
+//             console.log(score1);
+//           } else if ( scs === 4 || scs === 9 || scs === 14 || scs === 19 || scs === 24 ) {
+//             score1 = score1 + 1000;
+//             console.log(score1);
+//           }
+//       console.log(selected + "= selected");
+//       for (i = 0; i < questions.length; i++) {
+//       if ( selected !== questions[i].correctAnswer ) {
+//          console.log( selected + "was the wrong answer");
+//          }
+//       }
+//   }
+// }
 
 
 // $( "" ).click(function() {
