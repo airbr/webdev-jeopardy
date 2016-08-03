@@ -1,5 +1,6 @@
 console.log('Main.JS on.');
-/* Credot to Dr Mike & Andrea Airall & Emily Reese for significant help VVV */
+/* Credit to Dr Mike & Andrea Airall & Emily Reese for significant help VVV particularly with getOptions, Submit and showQuestion functions which are key to this program */
+/* All Question content are original though heh. */
 var questions = [
 /* Category 1 Questions */
   {
