@@ -154,6 +154,17 @@ var questions = [
     cashPrize: 1000
   }
 ];
+// Buzzer Function:
+var buzzer = document.getElementById("buzzer");
+buzzer = window.buzzer;
+function playbuzzer() {
+    buzzer.play();
+}
+function pausebuzzer() {
+    buzzer.pause();
+}
+// buzzer.play();
+
 // Scoreboard global variable hoisted from function submit, I think so anyways:
 var score = 0;
 //
@@ -190,6 +201,7 @@ function submit(a, b) {
     console.log(selected + " was selected");
     console.log("You selected the wrong answer:" + questions[window.currentQuestion].correctAnswer);
     alert('You lost ' + '$' + questions[window.currentQuestion].cashPrize + "!");
+    buzzer.play();
     window.subprize = questions[window.currentQuestion].cashPrize;
     score = score - window.subprize;
     console.log(score);
