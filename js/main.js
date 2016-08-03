@@ -1,6 +1,6 @@
 console.log('Main.JS on.');
 /* Credit to Dr Mike & Andrea Airall & Emily Reese for significant help VVV particularly with getOptions, Submit and showQuestion functions which are key to this program */
-/* All Question content are original though heh. */
+/* All var questions array content is original though heh. */
 var questions = [
 /* Category 1 Questions */
   {
@@ -154,21 +154,15 @@ var questions = [
     cashPrize: 1000
   }
 ];
-
-// Scoreboard in production:
-
+// Scoreboard global variable hoisted from function submit, I think so anyways:
 var score = 0;
-//Display current score
-//#score1
-// $('#score1').html(score);
-
+//
 $(function() {
    // Hide the Modal after submit
     $("#closesubmit").click(function(){
     $("#myModal").modal("hide");
     });
 });
-
 $(function() {
   // Remove Element after click
   $(".btn-xlarge").click(function() {
@@ -176,7 +170,6 @@ $(function() {
     $(this).remove();
     });
 });
-
  // Submit Question Answer
 function submit(a, b) {
   var selected = $(".modal-body input:checked").val();
@@ -186,21 +179,21 @@ function submit(a, b) {
   if ( selected === questions[window.currentQuestion].correctAnswer ) {
     console.log(selected + " was selected");
     console.log("You selected the correct answer:" + questions[window.currentQuestion].correctAnswer);
-    alert('You won ' + '$'+ questions[window.currentQuestion].cashPrize);
+    alert('You won ' + '$'+ questions[window.currentQuestion].cashPrize + "!");
     window.addprize = questions[window.currentQuestion].cashPrize;
     score = score + window.addprize;
     console.log(score);
-    $('#score1').html("$"+score);
+    $('#score1').html("  $"+score);
   }
   // Determine if incorrect answer was chosen and alert prize
   if ( selected !== questions[window.currentQuestion].correctAnswer ) {
     console.log(selected + " was selected");
     console.log("You selected the wrong answer:" + questions[window.currentQuestion].correctAnswer);
-    alert('You lost ' + '$' + questions[window.currentQuestion].cashPrize);
+    alert('You lost ' + '$' + questions[window.currentQuestion].cashPrize + "!");
     window.subprize = questions[window.currentQuestion].cashPrize;
     score = score - window.subprize;
     console.log(score);
-    $('#score1').html("$"+score);
+    $('#score1').html("  $"+score);
   }
 }
 // Get question info from array, prepare

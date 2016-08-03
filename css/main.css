@@ -1,25 +1,4 @@
 /*Jeopardy CSS*/
-
-/* Player interactive elements tbc*/
-/*.playertag {
-    color: white;
- }
-.highlight {
-  color: green;
-  background-color: green;
-}
-.currentturn {
-  background-color: red;
-  color: red;
-}
-#playerbtn:active {
-  color: red;
-  background-color: red;
-}
-#playerbtn2:active {
-  color: green;
-  background-color: green;
-}*/
 /* Content display */
 .container-fluid {
   max-width: 900px
@@ -101,6 +80,28 @@ h1 {
 p {
 font-size: 20px;
 }
+
+/* Player interactive elements to be completed */
+/*.playertag {
+    color: white;
+ }
+.highlight {
+  color: green;
+  background-color: green;
+}
+.currentturn {
+  background-color: red;
+  color: red;
+}
+#playerbtn:active {
+  color: red;
+  background-color: red;
+}
+#playerbtn2:active {
+  color: green;
+  background-color: green;
+}*/
+
 /* Credit to W3Schools VVV */
 #animated_div {
   width:76px;
