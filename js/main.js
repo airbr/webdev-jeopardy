@@ -151,15 +151,21 @@ $(function() {
   var score1 = $("#score1").append("$0");
   var score2 = $("#score2").append("$0");
 });
-function submit() {
+
+function submit(a, b) {
   var selected = $(".modal-body input:checked").val();
-    for (i = 0; i < questions.length; i++) {
-      if ( selected === questions[i].correctAnswer ) {
-        console.log(selected + " was selected");
-        console.log("You selected the correct answer:" + questions[i].correctAnswer);
-        var scs = i;
-      }
-    }
+  // console.log(selected);
+  console.log(questions[window.currentQuestion].correctAnswer + ' is correct answer.');
+  if ( selected === questions[window.currentQuestion].correctAnswer ) {
+    console.log(selected + " was selected");
+    console.log("You selected the correct answer:" + questions[window.currentQuestion].correctAnswer);
+    alert('You won ' + questions[window.currentQuestion].cashPrize);
+  }
+  if ( selected !== questions[window.currentQuestion].correctAnswer ) {
+    console.log(selected + " was selected");
+    console.log("You selected the wrong answer:" + questions[window.currentQuestion].correctAnswer);
+    alert('You lost ' + questions[window.currentQuestion].cashPrize);
+  }
 }
 function getOptions(question) {
   var $buttonDiv = $('<div class="btn-group" data-toggle="buttons"></div>');
@@ -180,11 +186,15 @@ function showQuestion(event, $modal) {
   var button = $(event.relatedTarget);  // Button that triggered the modal
   var num = parseInt(button.data('num'));
   var question = questions[num];
+  console.log('Question is ' + num);
+  window.currentQuestion = num;
   $modal.find('.modal-title').text(question.prompt);
   $modal.find('.modal-body').empty().append(getOptions(question));
   var success = question.correctAnswer;
   console.log("The correct answer is " + success);
 }
+
+
 $(function() {
   $("#myModal").on('show.bs.modal', function(event) {
     showQuestion(event, $(this));
@@ -199,10 +209,27 @@ $("#myModal").on('hidden.bs.modal', function () {
     return false;
 });
 
-
 // VVVV Garbage file text to hack the Gibson with VVVVV
 
 
+// // Making Answer buttons only clickable once
+// $('.btn-outline-secondary').click(function(){
+//    $(this).prop('disabled', true);
+// });
+// $('.correct').click(function(){
+//   $(alert("Correct!"));
+//   $('.correct').toggleClass('successanswer');
+//   $(score1).append('$10');
+// });
+// $('.incorrect').click(function(){
+//   $(alert("Nope."));
+//   $(score2).append('$-10');
+// });
+
+// // Player change Animation
+// $( "playertag" ).click(function() {
+//   $( this ).toggleClass( ".highlight" );
+// });
 
 // // Making Answer buttons only clickable once
 // $('.btn-outline-secondary').click(function(){
@@ -218,150 +245,8 @@ $("#myModal").on('hidden.bs.modal', function () {
 //   $(score2).append('$-10');
 // });
 
-
 // // Player change Animation
 // $( "playertag" ).click(function() {
 //   $( this ).toggleClass( ".highlight" );
 // });
 
-
-
-// // Making Answer buttons only clickable once
-// $('.btn-outline-secondary').click(function(){
-//    $(this).prop('disabled', true);
-// });
-// $('.correct').click(function(){
-//   $(alert("Correct!"));
-//   $('.correct').toggleClass('successanswer');
-//   $(score1).append('$10');
-// });
-// $('.incorrect').click(function(){
-//   $(alert("Nope."));
-//   $(score2).append('$-10');
-// });
-
-
-// // Player change Animation
-// $( "playertag" ).click(function() {
-//   $( this ).toggleClass( ".highlight" );
-// });
-
-
-
-//         if ( scs === 0 || scs === 5 || scs === 10 || scs === 15 || scs === 20 ) {
-//             score1 = score1 + 10;
-//             console.log(score1);
-//           } else if ( scs === 1 || scs === 6 || scs === 11 || scs === 16 || scs === 21 ) {
-//             score1 = score1 + 50;
-//             console.log(score1);
-//           } else if ( scs === 2 || scs === 7 || scs === 12 || scs === 17 || scs === 22 ) {
-//             score1 = score1 + 100;
-//             console.log(score1);
-//           } else if ( scs === 3 || scs === 8 || scs === 13 || scs === 18 || scs === 23 ) {
-//             score1 = score1 + 500;
-//             console.log(score1);
-//           } else if ( scs === 4 || scs === 9 || scs === 14 || scs === 19 || scs === 24 ) {
-//             score1 = score1 + 1000;
-//             console.log(score1);
-//           }
-//       console.log(selected + "= selected");
-//       for (i = 0; i < questions.length; i++) {
-//       if ( selected !== questions[i].correctAnswer ) {
-//          console.log( selected + "was the wrong answer");
-//          }
-//       }
-//   }
-// }
-
-
-// $( "" ).click(function() {
-//   alert( "Handler for .click() called." );
-// });
-
-
-// Listen for game button clicks-
-// Add extra step find particular div that makes modal-
-// // Yaml? Tool for typing JSON?
-
-
-// $('#exampleModal').on('show.bs.modal', function (event) {
-//   var button = $(event.relatedTarget) // Button that triggered the modal
-//   var recipient = button.data('whatever') // Extract info from data-* attributes
-//   var modal = $(this)
-//   modal.find('.modal-title').text('New message to ' + recipient)
-//   modal.find('.modal-body input').val(recipient)
-// })
-
-
-
-
-// Get JSON Example ---
-
-// var text = '{"employees":[' +
-// '{"firstName":"John","lastName":"Doe" },' +
-// '{"firstName":"Anna","lastName":"Smith" },' +
-// '{"firstName":"Peter","lastName":"Jones" }]}';
-
-// obj = JSON.parse(text);
-// document.getElementById("demo").innerHTML =
-// obj.employees[2].firstName + " " + obj.employees[2].lastName;
-
-
-// //??? Fix found online for Modal bug issue with Bootstrap???
-// $('.modal').on('hidden.bs.modal', function (e) {
-//     $('.modal .modal-body').empty();
-// });
-
-
-// Jeopardy JS
-// $("p").click(function(){
-//     alert("The paragraph was clicked.");
-// });
-// <script>
-// $.getJSON('question1.json'), function(data) {
-//   console.log( 'Working' );
-// };
-// </script>
-
-// console.log('JS Testing.');
-
-// $( "#question" ).append( "<button type="button" class="btn-outline-secondary">1. Hypertext Markup Language</button>" );
-
-
-// $(
-
-
-// var text = '{"question":[' +
-// '{"answerA":"Hyper Text Markup Language"},' +
-// '{"answerB":"Bogus Answer"},' +
-// '{"answerC":"Bogus Answer"},' +
-// '{"answerD":"Closeish"}]}';
-
-// obj = JSON.parse(text);
-// document.getElementById("question").innerHTML = obj.question;
-
-
-// Code I barely understand, attemped to edit unsuccesfully //
-
-// $(function() {
-
-//     $('.well question').click{function() {
-
-//       $.getJSON('question1.json', function(data) {
-
-//                var item = [];
-
-//                   $.each(data, function(key, value) {
-
-//                 items.push('<li id="' + key + '">' + val +  </li>);
-
-//            });
-
-//            $('<ul/>', {
-//             'class': 'interest-list',
-//             html: items.join('')
-//           }).appendTo('body');
-
-//     });
-
-// });
