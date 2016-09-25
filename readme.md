@@ -4,12 +4,19 @@ Credit to Dr Mike Hopper, Emily Reese, Andrea Airall and Chris Burgess for their
 
 --
 
-### Current version: V1.4
 
+### Current version: V1.4
 
 This project intends to meet the [spec defined for Project 1 in the course materials](https://github.com/ATL-WDI-Curriculum/projects/blob/master/project1.md).
 
 [The corresponding Trello for this game is contained within](https://trello.com/b/FtyjyTlm/wdi-project-1-jeopardy-morgan-murrah)
+
+Screenshots:
+
+![](http://imgur.com/9NdwvIp.jpeg)
+
+![](http://imgur.com/qHQc5w5.jpeg)
+
 
 * See the Trello for more detailed consideration of the games design and evidence of the games (messy) production.
 
