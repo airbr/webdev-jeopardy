@@ -11,7 +11,7 @@ Using Terminal
 Using GUI
 
 * 1. Download ZIP 
-* 2. Demcompress folder
+* 2. Decompress folder
 * 3. Find and open ``index.html`` with a modern web browser
 * 4. Enjoy!
 
