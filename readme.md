@@ -3,8 +3,8 @@ Quickstart
 Using Terminal
 
 * 1. Clone Repository ``git clone https://github.com/airbr/WDI7-Jeopardy``
-* 2. Cd into the new directory ``cd ./Project1-Jeopardy``
-* 3. Turn on audio (Optional)
+* 2. Change into the directory ``cd ./Project1-Jeopardy``
+* 3. Turn on audio (Optional... but highly reccomended)
 * 4. Open index.html in your web browser ``open index.html``
 * 5. Enjoy!
 
@@ -27,15 +27,17 @@ Credit to Dr Mike Hopper, Emily Reese, Andrea Airall and Chris Burgess for their
 
 ### Current version: V1.4
 
-This project intends to meet the [spec defined for Project 1 in the course materials](https://github.com/ATL-WDI-Curriculum/projects/blob/master/project1.md). [The corresponding Trello for this game is contained within](https://trello.com/b/FtyjyTlm/wdi-project-1-jeopardy-morgan-murrah).
+This project intends to meet the [spec defined for Project 1 in the course materials](https://github.com/ATL-WDI-Curriculum/projects/blob/master/project1.md). [The corresponding Trello for this game is contained within](https://trello.com/b/FtyjyTlm/wdi-project-1-jeopardy-morgan-murrah). See the Trello for more detailed consideration of the games design and evidence of the games production.
+
+[The game is hosted on Github at the following URL](https://github.com/airbr/WDI7-Jeopardy)
+
+#### Future develoment:
+
+* Make the game competitive/two player
+* Add a high-score table, or way of saving/sharing a score result
 
 
-
-* See the Trello for more detailed consideration of the games design and evidence of the games (messy) production.
-
-[The game is hosted on Github in the contained URL](https://github.com/airbr/WDI7-Jeopardy)
-
-* Technologies used in this game include:
+#### Technologies used in this game include:
 
  * HTML5
  * CSS3
