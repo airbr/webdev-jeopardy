@@ -1,6 +1,9 @@
 console.log('Main.JS on.');
 /* Credit to Dr Mike & Andrea Airall & Emily Reese for significant help VVV particularly with getOptions, Submit and showQuestion functions which are key to this program */
-/* All var questions array content is original though heh. */
+
+/* Hard coded questions and answers are original content however! */
+
+
 var questions = [
 /* Category 1 Questions */
   {
