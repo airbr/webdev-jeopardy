@@ -1,4 +1,20 @@
 /*Jeopardy CSS*/
+
+@font-face {
+  font-family: "Korinna BT";
+    src: url('fonts/Korinna Bold BT.eot');
+    src: url('fonts/Korinna Bold BTeot?#iefix') format("embedded-opentype"),
+    url('fonts/Korinna Bold BT.woff') format("woff"),
+    url('fonts/Korinna Bold BT.ttf') format("truetype"),
+    url('fonts/Korinna Bold BT.svg#Korinna BT') format("svg");
+}
+.qcategory-title, .question, .scoretally {
+  font-family: Korinna BT;
+}
+.panel-body {
+  background-color: #FA4542;
+}
+
 /* Content display */
 .container-fluid {
   max-width: 900px

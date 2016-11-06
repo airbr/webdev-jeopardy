@@ -1,14 +1,14 @@
 Quickstart
 --
-Using Terminal
+**From Terminal**
 
 * 1. Clone Repository ``git clone https://github.com/airbr/WDI7-Jeopardy``
 * 2. Change into the directory ``cd ./Project1-Jeopardy``
-* 3. Turn on audio (Optional... but highly reccomended)
+* 3. Turn on Audio (Optional... but highly reccomended!)
 * 4. Open index.html in your web browser ``open index.html``
 * 5. Enjoy!
 
-Using GUI
+**GUI**
 
 * 1. Download ZIP 
 * 2. Decompress folder
@@ -16,20 +16,39 @@ Using GUI
 * 4. Enjoy!
 
 --
-### ReadMe for WDI Jeopardy by Morgan Murrah created for Project 1 of WDI7 at General Assembly Atlanta.
+### WDI Jeopardy by Morgan Murrah - v1.5
+This was a game created for Project 1 of WDI7 at General Assembly Atlanta and was my first application of HTML, CSS, Javscript and JQuery. I am adding bits and pieces to it since then.
 
 ### Screenshots:
-![](http://imgur.com/9NdwvIp.jpeg)
 
-![](http://imgur.com/qHQc5w5.jpeg)
+![](wdi-jeopardy-v1.5-main.png)
+![](wdi-jeopardy-v1.5-modal.png)
 
 Credit to Dr Mike Hopper, Emily Reese, Andrea Airall and Chris Burgess for their assistance in production. Particularly Dr Hopper for assistance writing two key Javascript functions and Chris Burgess for re-writing one function to make a variable global that made this work.
 
-### Current version: V1.4
+### Current version: V1.5:
 
-This project intends to meet the [spec defined for Project 1 in the course materials](https://github.com/ATL-WDI-Curriculum/projects/blob/master/project1.md). [The corresponding Trello for this game is contained within](https://trello.com/b/FtyjyTlm/wdi-project-1-jeopardy-morgan-murrah). See the Trello for more detailed consideration of the games design and evidence of the games production.
+Added the Jeopardy font Korinna BT using a comprehensive font-face declaration:
 
-[The game is hosted on Github at the following URL](https://github.com/airbr/WDI7-Jeopardy)
+```
+@font-face {
+  font-family: "Korinna BT";
+    src: url('fonts/Korinna Bold BT.eot');
+    src: url('fonts/Korinna Bold BTeot?#iefix') format("embedded-opentype"),
+    url('fonts/Korinna Bold BT.woff') format("woff"),
+    url('fonts/Korinna Bold BT.ttf') format("truetype"),
+    url('fonts/Korinna Bold BT.svg#Korinna BT') format("svg");
+}
+```
+
+#### Further development:
+
+v1.6 should make this game properly responsive. Currently the titles of the question categories break from the table when sized down/ are not properly linked. I intend to do this with media queries.
+
+
+#### History:
+
+This project was created to meet the [spec defined for Project 1 in the course materials of the Web Development Immersive program](https://github.com/ATL-WDI-Curriculum/projects/blob/master/project1.md). [The corresponding Trello for this game is contained within](https://trello.com/b/FtyjyTlm/wdi-project-1-jeopardy-morgan-murrah). See the Trello for more detailed consideration of the games design and evidence of the games production.
 
 #### Future develoment:
 
@@ -53,6 +72,7 @@ Resources referred to include:
 * [JSON Howto](http://www.w3schools.com/json/json_eval.asp)
 * [Bootstrap JS Modals documentation](https://getbootstrap.com/javascript/#modals)
 * [jQuery API documentation](https://api.jquery.com/)
+
 
 
 
