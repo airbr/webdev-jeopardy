@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Jeopardy by Morgan Murrah</title>
+<!--   <link rel="stylesheet" type="text/css" href="css/reset.css"> -->
+<!--   Bootstrap -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+ <!--   Custom CSS -->
+ <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<div class="container-fluid">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="#">Jeopardy</a>
+  </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active">
+        <li><a href="https://github.com/ATL-WDI-Curriculum/projects/blob/master/project1.md">Project Specs</a></li>
+        <li><a href="https://github.com/airbr/WDI7-Jeopardy">Github</a></li>
+        <li><a href="https://trello.com/b/FtyjyTlm/wdi-project-1-jeopardy-morgan-murrah">Trello</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <!-- Refresh window button - Not just restart game -->
+        <FORM><INPUT TYPE="button" onClick="history.go(0)" VALUE="Restart game"></FORM></INPUT></a></li>
+        <!-- Background music -->
+          <audio controls autoplay>
+            <source src="Jeopardy-theme-song.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        <br>
+      <!-- Music for wrong answer buzzer -->
+<!-- <button onclick="playbuzzer()" type="button">Submit</button> -->
+          <audio id="buzzer">
+            <source src="Wrong-answer-sound-effect.mp3" type="audio/mpeg">
+            Your browser does not support HTML5 video.
+          </audio>
+          <audio id="chaching">
+            <source src="Cash-register-sound.wav" type="audio/mpeg">
+            Your browser does not support HTML5 video.
+          </audio>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header>
+<!-- <div id="currentplayer" class="btn btn-primary btn-block"><p><span id="headline">Current Player</span></p></button></div>
+  <div class="playeropt">
+<br>
+  <button id="playerbtn" type="button" class="btn btn-primary btn-block playertag"><p>Player1</p></button>
+<br>
+  <button id="playerbtn2" type="button" class="btn btn-primary btn-block playertag"><p>Player2</p></button>
+</div> -->
+</header>
+
+<!-- Body -->
+<body>
+<div class="logos">
+    <img src="css/images/WDI.png" alt="WDI Logo" id="wdilogo">
+    <img src="css/images/Jeopardy.png" alt="Jeopardy Logo" id="topjlogo" id="wdilogo">
+    <br>
+      <div id="animated_div">CSS3<br><span style="font-size:10px;">Animation</span></div>
+</div>
+<div class="container">
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <div class="qcategory-title text-center col-md-2 col-md-offset-1"><h4>HTML</h4></div> <!-- offset to center odd number of columns -->
+    <div class="qcategory-title text-center col-md-2"><h4>CSS</h4></div>
+    <div class="qcategory-title text-center col-md-2"><h4>JS</h4></div>
+    <div class="qcategory-title text-center col-md-2"><h4>UNIX</h4></div>
+    <div class="qcategory-title text-center col-md-2"><h4>BONUS</h4></div>
+    <div class="clearfix"></div> <!-- clearfix squares the header around the headings -->
+  </div>
+  <div class="panel-body" id="main-board">
+
+  <!-- Category 1 -->
+    <div class="category col-md-2 col-md-offset-1">
+
+  <!-- Category 1 Question 1 & Modal Template to be dynamically changed for other questions -->
+      <div class="well question">
+        <div>
+
+              <!-- Credit to Dr Mike; made this dynamic VVV -->
+              <div class="bs-example">
+                <!-- Button HTML (to Trigger Modal) -->
+                <button type="button" class="btn btn-info btn-xlarge" data-toggle="modal" data-target="#myModal" data-num="0">$10</button>
+
+                <!-- Modal HTML -->
+                <div id="myModal" class="modal fade">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 class="modal-title">Modal Window</h4>
+                          </div>
+                            <div class="modal-body">
+                          </div>
+                        <div class="modal-footer">
+                        <button id="closesubmit" type="button" class="btn btn-primary clickable" onclick="submit()">Submit</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+        </div>
+      </div>
+
+<!-- Category 1; Question 2-5 -->
+      <div class="well question">
+        <button type="button" class="btn btn-info btn-xlarge" data-toggle="modal" data-target="#myModal" data-num="1">$50</button>
+      </div>
+      <div class="well question">
+        <button type="button" class="btn btn-info btn-xlarge" data-toggle="modal" data-target="#myModal" data-num="2">$100</button>
+      </div>
+      <div class="well question">
+        <button type="button" class="btn btn-info btn-xlarge" data-toggle="modal" data-target="#myModal" data-num="3">$500</button>
+      </div>
+      <div class="well question">
+        <button type="button" class="btn btn-info btn-xlarge" data-toggle="modal" data-target="#myModal" data-num="4">$1000</button>
+      </div>
+    </div>
+
+
+
+<!-- Category 2 ; rinse, repeat -->
+    <div class="category col-md-2">
+      <div class="well question">
+        <button type="button" class="btn btn-info btn-xlarge" data-toggle="modal" data-target="#myModal" data-num="5">$10</button>
+      </div>
+      <div class="well question">
+        <button type="button" class="btn btn-info btn-xlarge" data-toggle="modal" data-target="#myModal" data-num="6">$50</button>
+      </div>
+      <div class="well question">
+        <button type="button" class="btn btn-info btn-xlarge" data-toggle="modal" data-target="#myModal" data-num="7">$100</button>
+      </div>
+      <div class="well question">
+        <button type="button" class="btn btn-info btn-xlarge" data-toggle="modal" data-target="#myModal" data-num="8">$500</button>
+      </div>
+      <div class="well question">
+        <button type="button" class="btn btn-info btn-xlarge" data-toggle="modal" data-target="#myModal" data-num="9">$1000</button>
+      </div>
+    </div>
+<!-- Category 3 -->
+    <div class="category col-md-2">
+      <div class="well question">
+        <button type="button" class="btn btn-info btn-xlarge" data-toggle="modal" data-target="#myModal" data-num="10">$10</button>
+      </div>
+      <div class="well question">
+        <button type="button" class="btn btn-info btn-xlarge" data-toggle="modal" data-target="#myModal" data-num="11">$50</button>
+      </div>
+      <div class="well question">
+        <button type="button" class="btn btn-info btn-xlarge" data-toggle="modal" data-target="#myModal" data-num="12">$100</button>
+      </div>
+      <div class="well question">
+        <button type="button" class="btn btn-info btn-xlarge" data-toggle="modal" data-target="#myModal" data-num="13">$500</button>
+      </div>
+      <div class="well question">
+        <button type="button" class="btn btn-info btn-xlarge" data-toggle="modal" data-target="#myModal" data-num="14">$1000</button>
+      </div>
+    </div>
+
+<!-- Category 4 -->
+    <div class="category col-md-2">
+      <div class="well question">
+        <button type="button" class="btn btn-info btn-xlarge" data-toggle="modal" data-target="#myModal" data-num="15">$10</button>
+      </div>
+      <div class="well question">
+        <button type="button" class="btn btn-info btn-xlarge" data-toggle="modal" data-target="#myModal" data-num="16">$50</button>
+      </div>
+      <div class="well question">
+        <button type="button" class="btn btn-info btn-xlarge" data-toggle="modal" data-target="#myModal" data-num="17">$100</button>
+      </div>
+      <div class="well question">
+        <button type="button" class="btn btn-info btn-xlarge" data-toggle="modal" data-target="#myModal" data-num="18">$500</button>
+      </div>
+      <div class="well question">
+        <button type="button" class="btn btn-info btn-xlarge" data-toggle="modal" data-target="#myModal" data-num="19">$1000</button>
+      </div>
+    </div>
+
+<!-- Category 5 -->
+    <div class="category col-md-2">
+       <div class="well question">
+        <button type="button" class="btn btn-info btn-xlarge" data-toggle="modal" data-target="#myModal" data-num="20">$10</button>
+      </div>
+      <div class="well question">
+        <button type="button" class="btn btn-info btn-xlarge" data-toggle="modal" data-target="#myModal" data-num="21">$50</button>
+      </div>
+      <div class="well question">
+        <button type="button" class="btn btn-info btn-xlarge" data-toggle="modal" data-target="#myModal" data-num="22">$100</button>
+      </div>
+      <div class="well question">
+        <button type="button" class="btn btn-info btn-xlarge" data-toggle="modal" data-target="#myModal" data-num="23">$500</button>
+      </div>
+      <div class="well question">
+        <button type="button" class="btn btn-info btn-xlarge" data-toggle="modal" data-target="#myModal" data-num="24">$1000</button>
+      </div>
+    </div>
+  </div>
+
+<!-- Footer & Dynamic scoreboard -->
+    <div class="panel-footer">
+      <div class="scoretally pull-right"><h4>Score Player 1:<span id="score1">      </span></h4></div>
+      <br>
+      <div class="scoretally pull-right"><h4>Score Player 2:<span id="score2">TBD...</span></h4></div>
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</div>
+
+   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-3.1.0.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- <script src="js/main.js"></script> -->
+<script src="js/main.js"></script>
+</body>
+
+</html>
