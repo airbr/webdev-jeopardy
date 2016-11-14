@@ -1,18 +1,20 @@
-Quickstart
+# [Live Hosting on Firebase](https://wdijeopardy.firebaseapp.com)
+
+Quickstart from clone/download:
 --
 **From Terminal**
 
 * 1. Clone Repository ``git clone https://github.com/airbr/WDI7-Jeopardy``
 * 2. Change into the directory ``cd ./Project1-Jeopardy``
 * 3. Turn on Audio (Optional... but highly reccomended!)
-* 4. Open index.html in your web browser ``open index.html``
+* 4. Open index.html in your web browser ``open public/index.html``
 * 5. Enjoy!
 
 **GUI**
 
 * 1. Download ZIP 
 * 2. Decompress folder
-* 3. Find and open ``index.html`` with a modern web browser
+* 3. Find and open ``public/index.html`` with a modern web browser
 * 4. Enjoy!
 
 --
