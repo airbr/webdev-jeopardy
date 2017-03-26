@@ -6,7 +6,9 @@
     url('fonts/Korinna Bold BT.ttf') format("truetype"),
     url('fonts/Korinna Bold BT.svg#Korinna BT') format("svg");
 }
-
+.question {
+    justify-self: center;
+}
 .panel-heading {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -18,7 +20,6 @@
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-auto-flow: column;
-    width: 95%;
 }
 
 .qcategory-title, .question, .scoretally {
@@ -46,17 +47,17 @@
   height: 100%;
   width: 100%;
 }
-.btn-xlarge {
-    color: white;
-    height: 90%;
-    width: 90%;
-    padding: 12px 24px;
-    font-size: 24px;
-    line-height: normal;
-    -webkit-border-radius: 8px;
-       -moz-border-radius: 8px;
-            border-radius: 8px;
-    }
+/*.btn-xlarge {*/
+    /*color: white;*/
+    /*height: 90%;*/
+    /*width: 90%;*/
+    /*padding: 12px 24px;*/
+    /*font-size: 24px;*/
+    /*line-height: normal;*/
+    /*-webkit-border-radius: 8px;*/
+       /*-moz-border-radius: 8px;*/
+            /*border-radius: 8px;*/
+    /*}*/
 .btn-xlarge:hover {
     color: black;
     background-color: red;
