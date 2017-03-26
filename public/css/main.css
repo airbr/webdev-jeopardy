@@ -6,12 +6,24 @@
     url('fonts/Korinna Bold BT.ttf') format("truetype"),
     url('fonts/Korinna Bold BT.svg#Korinna BT') format("svg");
 }
+
+.panel-heading {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.gridstyling {
+    background-color: teal;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
 .qcategory-title, .question, .scoretally {
   font-family: Korinna BT;
-}
-.panel-body {
-  background-color: #FA4542;
-}
+}3
+/*.panel-body {*/
+  /*background-color: #FA4542;*/
+/*}*/
 .container-fluid {
   max-width: 900px
 }
