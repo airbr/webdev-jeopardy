@@ -131,30 +131,30 @@ var questions = [
     options: ['Warning, Confirm', 'Confirm, Refresh', 'Prompt, Confirm', 'Prompt, Notice'],
     correctAnswer: 'Prompt, Confirm',
     cashPrize: 10  },
-  {
+    {
     prompt: 'The man page for Git describes it as:',
     options: ['That stupid content tracker', 'A Content Version Tracker', 'General-Index-Tracker', 'A Revision Editor'],
     correctAnswer: 'That stupid content tracker',
     cashPrize: 50
-  },
-  {
+    },
+    {
     prompt: 'What version of what coding language introduced the audio function contained in this page?',
     options: ['ECMAScript', 'MP3ML', 'HTML5', 'WavML'],
     correctAnswer: 'HTML5',
     cashPrize: 100
-  },
+    },
     {
     prompt: 'The rolling box saying "CSS" on the game page is an example of:',
     options: ['CSS Only Animation', 'JS Animation', 'HTML Complex Animation', 'REPL Animation'],
     correctAnswer: 'CSS Only Animation',
     cashPrize: 500
-  },
-  {
+    },
+    {
     prompt: 'What is an early computer language famous for being designed by Government and Business without much input from computer scientists?',
     options: ['MS Office', 'Telnet', 'COBOL', 'C--' ],
     correctAnswer: 'COBOL',
     cashPrize: 1000
-  }
+    }
 ];
 // Buzzer & Chaching sounds
 var buzzer = document.getElementById("buzzer");
@@ -177,6 +177,17 @@ function pausechaching() {
 // Global variable  score...
 var score = 0;
 //
+var orientation = screen.orientation || screen.mozOrientation || screen.msOrientation;
+
+if (orientation.type === "landscape-primary") {
+    console.log("That looks good.");
+} else if (orientation.type === "landscape-secondary") {
+    console.log("Mmmh... the screen is upside down!");
+} else if (orientation.type === "portrait-secondary" || orientation.type === "portrait-primary") {
+    console.log("Mmmh... you should rotate your device to landscape");
+}
+
+
 $(function() {
    // Hide the Modal after submit
     $("#closesubmit").click(function(){
@@ -185,7 +196,7 @@ $(function() {
 });
 $(function() {
   // Remove Element after click
-  $(".btn-xlarge").click(function() {
+  $(".gridbtn").click(function() {
     $(this).addClass("disabled");
     $(this).remove();
     });
