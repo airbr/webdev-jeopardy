@@ -15,7 +15,8 @@
 .gridstyling {
     background-color: teal;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-flow: column;
 }
 
 .qcategory-title, .question, .scoretally {
@@ -31,10 +32,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-#wdilogo {
-  max-height: 256px;
-  width: auto;
 }
 #score1 {
   color: green;
@@ -78,14 +75,14 @@
   width: 100vw;
   align-content: center;
 }
-.question {
-    height:100px;
-    vertical-align: middle;
-    text-align: center;
-    font-size: 1.5em;
-    padding-top: 15px;
-    cursor: pointer;
-}
+/*.question {*/
+    /*height:100px;*/
+    /*vertical-align: middle;*/
+    /*text-align: center;*/
+    /*font-size: 1.5em;*/
+    /*padding-top: 15px;*/
+    /*cursor: pointer;*/
+/*}*/
 .gametitle {
   display: flex;
   align-items: center;
