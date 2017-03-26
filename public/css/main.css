@@ -1,5 +1,3 @@
-/*Jeopardy CSS*/
-
 @font-face {
   font-family: "Korinna BT";
     src: url('fonts/Korinna Bold BT.eot');
@@ -14,8 +12,6 @@
 .panel-body {
   background-color: #FA4542;
 }
-
-/* Content display */
 .container-fluid {
   max-width: 900px
 }
@@ -32,7 +28,6 @@
   color: green;
   font-size: 30px;
 }
-/* Key formatting of game board */
 .navbar-header {
   max-width: 900px;
 }
@@ -98,83 +93,4 @@ h1 {
 }
 p {
 font-size: 20px;
-}
-
-/* Player interactive elements to be completed */
-/*.playertag {
-    color: white;
- }
-.highlight {
-  color: green;
-  background-color: green;
-}
-.currentturn {
-  background-color: red;
-  color: red;
-}
-#playerbtn:active {
-  color: red;
-  background-color: red;
-}
-#playerbtn2:active {
-  color: green;
-  background-color: green;
-}*/
-
-/* Credit to W3Schools VVV */
-#animated_div {
-  width:76px;
-  height:47px;
-  background: #92B901;
-color: #ffffff;
-position: relative;
-font-weight:bold;
-font-size:20px;
-padding:10px;
-animation:animated_div 5s 1;
--moz-animation:animated_div 5s 1;
--webkit-animation:animated_div 5s 1;
--o-animation:animated_div 5s 1;
-border-radius:5px;
-  -webkit-border-radius:5px;
-}
-
-@keyframes animated_div
-{
-0%    {transform: rotate(0deg);left:0px;}
-25%   {transform: rotate(20deg);left:0px;}
-50%   {transform: rotate(0deg);left:500px;}
-55%   {transform: rotate(0deg);left:500px;}
-70%   {transform: rotate(0deg);left:500px;background:#1ec7e6;}
-100%  {transform: rotate(-360deg);left:0px;}
-}
-
-@-webkit-keyframes animated_div
-{
-0%    {-webkit-transform: rotate(0deg);left:0px;}
-25%   {-webkit-transform: rotate(20deg);left:0px;}
-50%   {-webkit-transform: rotate(0deg);left:500px;}
-55%   {-webkit-transform: rotate(0deg);left:500px;}
-70%   {-webkit-transform: rotate(0deg);left:500px;background:#1ec7e6;}
-100%  {-webkit-transform: rotate(-360deg);left:0px;}
-}
-
-@-moz-keyframes animated_div
-{
-0%   {-moz-transform: rotate(0deg);left:0px;}
-25%  {-moz-transform: rotate(20deg);left:0px;}
-50%  {-moz-transform: rotate(0deg);left:500px;}
-55%  {-moz-transform: rotate(0deg);left:500px;}
-70%  {-moz-transform: rotate(0deg);left:500px;background:#1ec7e6;}
-100% {-moz-transform: rotate(-360deg);left:0px;}
-}
-
-@-o-keyframes animated_div
-{
-0%   {transform: rotate(0deg);left:0px;}
-25%  {transform: rotate(20deg);left:0px;}
-50%  {transform: rotate(0deg);left:500px;}
-55%  {transform: rotate(0deg);left:500px;}
-70%  {transform: rotate(0deg);left:500px;background:#1ec7e6;}
-100% {transform: rotate(-360deg);left:0px;}
 }
