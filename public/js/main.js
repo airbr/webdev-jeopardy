@@ -1,8 +1,8 @@
-console.log('Main.JS on.');
-/* Credit to Dr Mike & Andrea Airall & Emily Reese for significant help VVV particularly with getOptions, Submit and showQuestion functions which are key to this program */
+console.group('Main.js loaded');
 
-/* Hard coded questions and answers are original content however! */
+console.log('...');
 
+console.groupEnd();
 
 var questions = [
 /* Category 1 Questions */
@@ -156,7 +156,7 @@ var questions = [
     cashPrize: 1000
   }
 ];
-// Buzzer & Chaching sound functions:
+// Buzzer & Chaching sounds
 var buzzer = document.getElementById("buzzer");
 buzzer = window.buzzer;
 function playbuzzer() {
@@ -173,7 +173,8 @@ function playchaching() {
 function pausechaching() {
     chaching.pause();
 }
-// Scoreboard global variable hoisted from function submit, I think so anyways:
+
+// Global variable  score...
 var score = 0;
 //
 $(function() {
@@ -192,13 +193,9 @@ $(function() {
  // Submit Question Answer
 function submit(a, b) {
   var selected = $(".modal-body input:checked").val();
-  // console.log(selected);
-  console.log(questions[window.currentQuestion].correctAnswer + ' is correct answer.');
   // Determine if correct answer was chosen and alert prize
   if ( selected === questions[window.currentQuestion].correctAnswer ) {
-    console.log(selected + " was selected");
-    console.log("You selected the correct answer:" + questions[window.currentQuestion].correctAnswer);
-    // alert('You won ' + '$'+ questions[window.currentQuestion].cashPrize + "!");
+    // console.log(selected + " was selected");
     chaching.play();
     window.addprize = questions[window.currentQuestion].cashPrize;
     score = score + window.addprize;
@@ -207,13 +204,9 @@ function submit(a, b) {
   }
   // Determine if incorrect answer was chosen and alert prize
   if ( selected !== questions[window.currentQuestion].correctAnswer ) {
-    console.log(selected + " was selected");
-    console.log("You selected the wrong answer:" + questions[window.currentQuestion].correctAnswer);
-    // alert('You lost ' + '$' + questions[window.currentQuestion].cashPrize + "!");
     buzzer.play();
     window.subprize = questions[window.currentQuestion].cashPrize;
     score = score - window.subprize;
-    console.log(score);
     $('#score1').html("  $"+score);
   }
 }
@@ -224,10 +217,8 @@ function getOptions(question) {
     var $div = $('<div class="radio">');
     var $label = $('<label class="radio-inline"></label');
     var $input = $('<input type="radio" name="opts" value="' + opt + '">');
-
     $label.append($input);
     $label.append(opt);
-
     $div.append($label);
     $buttonDiv.append($div);
   });
@@ -238,7 +229,6 @@ function showQuestion(event, $modal) {
   var button = $(event.relatedTarget);  // Button that triggered the modal
   var num = parseInt(button.data('num'));
   var question = questions[num];
-  console.log('Question is ' + num);
   window.currentQuestion = num;
   $modal.find('.modal-title').text(question.prompt);
   $modal.find('.modal-body').empty().append(getOptions(question));
@@ -256,56 +246,3 @@ $("#myModal").on('hidden.bs.modal', function () {
     $('#myModal').modal('toggle');
     return false;
 });
-
-
-// VVVV Garbage file text to hack the Gibson with VVVVV
-
-
-// // Making Answer buttons only clickable once
-// $('#closesubmit').click(function(){
-//    $(.).prop('disabled', true);
-// });
-// $('.correct').click(function(){
-//   $(alert("Correct!"));
-//   $('.correct').toggleClass('successanswer');
-//   $(score1).append('$10');
-// });
-// $('.incorrect').click(function(){
-//   $(alert("Nope."));
-//   $(score2).append('$-10');
-// });
-
-// // Player change Animation
-// $( "playertag" ).click(function() {
-//   $( this ).toggleClass( ".highlight" );
-// });
-
-// // Making Answer buttons only clickable once
-// $('.btn-outline-secondary').click(function(){
-//    $(this).prop('disabled', true);
-// });
-// $('.correct').click(function(){
-//   $(alert("Correct!"));
-//   $('.correct').toggleClass('successanswer');
-//   $(score1).append('$10');
-// });
-// $('.incorrect').click(function(){
-//   $(alert("Nope."));
-//   $(score2).append('$-10');
-// });
-
-// // Player change Animation
-// $( "playertag" ).click(function() {
-//   $( this ).toggleClass( ".highlight" );
-// });
-
-// $("#playerbtn").click(function(){
-//   var currentplayer = "Player1";
-//   console.log(currentplayer + " is the variable currentplayer");
-//   console.log(score1);
-// });
-// $("#playerbtn2").click(function(){
-//  var currentplayer = "Player2";
-//   console.log(currentplayer + " is the variable currentplayer");
-//   console.log(score2);
-
