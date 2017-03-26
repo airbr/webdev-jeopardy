@@ -81,40 +81,33 @@
       </div>
       <div class="panel-body" id="main-board">
 
-      <!-- Category 1 -->
-        <div class="category col-md-2 col-md-offset-1">
-
-      <!-- Category 1 Question 1 & Modal Template to be dynamically changed for other questions -->
-          <div class="well question">
-            <div>
-
-                  <!-- Credit to Dr Mike; made this dynamic VVV -->
-                  <div class="bs-example">
-                    <!-- Button HTML (to Trigger Modal) -->
-                    <button type="button" class="btn btn-info btn-xlarge" data-toggle="modal" data-target="#myModal" data-num="0">$10</button>
-
-                    <!-- Modal HTML -->
-                    <div id="myModal" class="modal fade">
+          <div>
+              <div class="bs-example">
+                  <!-- Modal HTML -->
+                  <div id="myModal" class="modal fade">
                       <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                            <h4 class="modal-title">Modal Window</h4>
+                          <div class="modal-content">
+                              <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                  <h4 class="modal-title">Modal Window</h4>
                               </div>
-                                <div class="modal-body">
+                              <div class="modal-body">
                               </div>
-                            <div class="modal-footer">
-                            <button id="closesubmit" type="button" class="btn btn-primary clickable" onclick="submit()">Submit</button>
+                              <div class="modal-footer">
+                                  <button id="closesubmit" type="button" class="btn btn-primary clickable" onclick="submit()">Submit</button>
+                              </div>
                           </div>
-                        </div>
                       </div>
-                    </div>
                   </div>
-
-            </div>
+              </div>
           </div>
 
-    <!-- Category 1; Question 2-5 -->
+
+    <!-- Category 1 , Questions 1-5 -->
+        <div class="category col-md-2 col-md-offset-1">
+          <div class="well question">
+            <button type="button" class="btn btn-info btn-xlarge" data-toggle="modal" data-target="#myModal" data-num="0">$10</button>
+          </div>
           <div class="well question">
             <button type="button" class="btn btn-info btn-xlarge" data-toggle="modal" data-target="#myModal" data-num="1">$50</button>
           </div>
@@ -128,9 +121,6 @@
             <button type="button" class="btn btn-info btn-xlarge" data-toggle="modal" data-target="#myModal" data-num="4">$1000</button>
           </div>
         </div>
-
-
-
     <!-- Category 2 ; rinse, repeat -->
         <div class="category col-md-2">
           <div class="well question">
@@ -209,10 +199,7 @@
 
     <!-- Footer & Dynamic scoreboard -->
         <div class="panel-footer">
-          <div class="scoretally pull-right"><h4>Score Player 1:<span id="score1">      </span></h4></div>
-          <br>
-          <div class="scoretally pull-right"><h4>Score Player 2:<span id="score2">TBD...</span></h4></div>
-
+          <div class="scoretally pull-right"><h4>Score:<span id="score1">      </span></h4></div>
           <div class="clearfix"></div>
         </div>
       </div>
@@ -222,9 +209,9 @@
     <script src="js/jquery-3.1.0.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-
     <!-- <script src="js/main.js"></script> -->
     <script src="js/main.js"></script>
+
 </body>
 
 </html>
