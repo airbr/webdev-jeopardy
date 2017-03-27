@@ -19,22 +19,21 @@
   height: 90px;
   background-color: darkblue;
 }
-.ten {
-    background-color: red;
-}
-.fifty {
-    background-color: green;
-}
-.onehundred {
-    background-color: blue;
-}
-.fivehundred {
-    background-color: red;
-}
-.onethousand {
-    background-color: blue;
-}
-
+/*.ten {*/
+    /*background-color: red;*/
+/*}*/
+/*.fifty {*/
+    /*background-color: green;*/
+/*}*/
+/*.onehundred {*/
+    /*background-color: blue;*/
+/*}*/
+/*.fivehundred {*/
+    /*background-color: red;*/
+/*}*/
+/*.onethousand {*/
+    /*background-color: blue;*/
+/*}*/
 .gridstyling {
     background-color: teal;
     display: grid;

@@ -1,6 +1,14 @@
 console.group('Main.js loaded');
 
-console.log('...');
+var orientation = screen.orientation || screen.mozOrientation || screen.msOrientation;
+
+if (orientation.type === "landscape-primary") {
+    console.log("That looks good. (Landscape)33");
+} else if (orientation.type === "landscape-secondary") {
+    console.log("Mmmh... the screen is upside down!");
+} else if (orientation.type === "portrait-secondary" || orientation.type === "portrait-primary") {
+    console.log("Mmmh... you should rotate your device to landscape");
+}
 
 console.groupEnd();
 
@@ -177,16 +185,6 @@ function pausechaching() {
 // Global variable  score...
 var score = 0;
 //
-var orientation = screen.orientation || screen.mozOrientation || screen.msOrientation;
-
-if (orientation.type === "landscape-primary") {
-    console.log("That looks good.");
-} else if (orientation.type === "landscape-secondary") {
-    console.log("Mmmh... the screen is upside down!");
-} else if (orientation.type === "portrait-secondary" || orientation.type === "portrait-primary") {
-    console.log("Mmmh... you should rotate your device to landscape");
-}
-
 
 $(function() {
    // Hide the Modal after submit
