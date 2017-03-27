@@ -35,7 +35,6 @@
     /*background-color: blue;*/
 /*}*/
 .gridstyling {
-    background-color: teal;
     display: grid;
     grid-template-rows: [ten] 1fr [fifty] 1fr [onehundred] 1fr [fivehundred] 1fr [onethousand] 1fr;
     grid-auto-flow: column;
