@@ -152,9 +152,9 @@ var questions = [
     cashPrize: 100
     },
     {
-    prompt: 'The rolling box saying "CSS" on the game page is an example of:',
-    options: ['CSS Only Animation', 'JS Animation', 'HTML Complex Animation', 'REPL Animation'],
-    correctAnswer: 'CSS Only Animation',
+    prompt: 'Which of these frameworks include support for TypeScript?',
+    options: ['AngularJS', 'Angular', 'JQuery', 'Whitespace'],
+    correctAnswer: 'Angular',
     cashPrize: 500
     },
     {
