@@ -1,5 +1,6 @@
 #topjlogo {
     width: 100%;
+    max-width: 600px;
 }
 @font-face {
   font-family: "Korinna BT";
