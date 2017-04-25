@@ -20,13 +20,11 @@
 --
 ### WDI Jeopardy by Morgan Murrah - v2.0
 
-This game started as one of my earliest projects and was my first application of HTML, CSS, Javscript and JQuery- also Project one from taking the web development immersive at General Assembly. I have been adding bits and pieces to it since then.
-
-Most Recently I have 
+This game started as one of my earliest projects and was my first application of HTML, CSS, Javsacript and JQuery. This was also originally project one from taking the web development immersive at General Assembly. I have been adding bits and pieces to it since then.
 
 ### Current version: V2.0:
 
-This game has been GREATLY simplified/ a lot of refactoring of my horrible earlier code. The game now makes use of the new CSS Grid specification [which is not fully supported yet](http://caniuse.com/#feat=css-grid). Since its a simple game I figured its a great place to try this new shiny thing. 
+This game has been simplified/ a lot of refactoring of my horrible earlier code. The game now makes use of the new CSS Grid specification [which is not fully supported yet](http://caniuse.com/#feat=css-grid). Since its a simple game I figured its a great place to try this new shiny thing in the world of CSS. 
 
 ### Current Game:
 
