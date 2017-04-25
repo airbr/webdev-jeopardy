@@ -1,12 +1,12 @@
-# [Live Hosting on Firebase](https://wdijeopardy.firebaseapp.com)
+## [Live Hosting on Firebase](https://wdijeopardy.firebaseapp.com)
 
-Quickstart from clone/download:
---
-**From Terminal**
+*Get Started:*
+
+**Terminal**
 
 * 1. Clone Repository ``git clone https://github.com/airbr/WDI7-Jeopardy``
 * 2. Change into the directory ``cd ./Project1-Jeopardy``
-* 3. Turn on Audio (Optional... but highly reccomended!)
+* 3. Turn on your audio (Optional... but highly reccomended!)
 * 4. Open index.html in your web browser ``open public/index.html``
 * 5. Enjoy!
 
@@ -14,25 +14,30 @@ Quickstart from clone/download:
 
 * 1. Download ZIP 
 * 2. Decompress folder
-* 3. Find and open ``public/index.html`` with a modern web browser as this simple game uses modern CSS GRID spec
+* 3. Find and open ``public/index.html`` 
 * 4. Enjoy!
 
 --
 ### WDI Jeopardy by Morgan Murrah - v2.0
 
-This game was started as my earliest project wirh General Assembly Atlanta and was my first application of HTML, CSS, Javscript and JQuery. I am adding bits and pieces to it since then.
+This game started as one of my earliest projects and was my first application of HTML, CSS, Javscript and JQuery- also Project one from taking the web development immersive at General Assembly. I have been adding bits and pieces to it since then.
 
+Most Recently I have 
 
-### 1.5 Screenshots:
+### Current version: V2.0:
+
+This game has been GREATLY simplified/ a lot of refactoring of my horrible earlier code. The game now makes use of the new CSS Grid specification [which is not fully supported yet](http://caniuse.com/#feat=css-grid). Since its a simple game I figured its a great place to try this new shiny thing. 
+
+### Current Game:
+
+![](mobilescreenshot-jeopardy.png)
+
+### Older Screenshots:
 
 ![](wdi-jeopardy-v1.5-main.png)
 ![](wdi-jeopardy-v1.5-modal.png)
 
-### Current version: V2.0:
 
-This game has been GREATLY simplified/ a lot of the junk cut out... and now it is in progress to becoming a a very basic Progressive Web App. !
-
-It also makes use of the new CSS Grid specification, which entails some bleeding-edge problems with older browsers.
 
 #### Future develoment:
 
