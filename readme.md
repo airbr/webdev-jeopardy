@@ -47,7 +47,7 @@ This game has been simplified/ a lot of refactoring of my horrible earlier code.
  * HTML5
  * CSS3
  * Bootstrap 3.3.7
- * JQuery/Ajax
+ * JQuery
 
 Resources referred to include:
 

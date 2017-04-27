@@ -1,16 +1,4 @@
-console.group('Main.js loaded');
-
-var orientation = screen.orientation || screen.mozOrientation || screen.msOrientation;
-
-if (orientation.type === "landscape-primary") {
-    console.log("(Landscape) Looks good");
-} else if (orientation.type === "landscape-secondary") {
-    console.log("Mmmh... the screen is upside down!");
-} else if (orientation.type === "portrait-secondary" || orientation.type === "portrait-primary") {
-    console.log("Mmmh... you should rotate your device to landscape");
-}
-
-console.groupEnd();
+// console.group('Main.js loaded');
 
 var questions = [
 /* Category 1 Questions */
