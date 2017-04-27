@@ -27,34 +27,12 @@
   height: 90px;
   background-color: darkblue;
 }
-/*.ten {*/
-    /*background-color: red;*/
-/*}*/
-/*.fifty {*/
-    /*background-color: green;*/
-/*}*/
-/*.onehundred {*/
-    /*background-color: blue;*/
-/*}*/
-/*.fivehundred {*/
-    /*background-color: red;*/
-/*}*/
-/*.onethousand {*/
-    /*background-color: blue;*/
-/*}*/
 .gridstyling {
     display: grid;
     grid-template-rows: [ten] 1fr [fifty] 1fr [onehundred] 1fr [fivehundred] 1fr [onethousand] 1fr;
     grid-auto-flow: column;
     grid-gap: 10px;
-    /*grid-template-areas:*/
-          /*"ten ten ten ten ten"*/
-          /*"fifty fifty fifty fifty fifty"*/
-          /*"onehundred onehundred onehundred onehundred onehundred"*/
-          /*"fivehundred fivehundred fivehundred fivehundred fivehundred"*/
-          /*"onethousand onethousand onethousand onethousand onethousand";*/
 }
-
 .qcategory-title, .question, .scoretally {
   font-family: Korinna BT;
 }
