@@ -10,13 +10,6 @@
 * 4. Open index.html in your web browser ``open public/index.html``
 * 5. Enjoy!
 
-**GUI**
-
-* 1. Download ZIP 
-* 2. Decompress folder
-* 3. Find and open ``public/index.html`` 
-* 4. Enjoy!
-
 --
 ### WDI Jeopardy by Morgan Murrah - v2.0
 
