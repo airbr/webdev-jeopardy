@@ -1,23 +1,20 @@
-## [Live Hosting on Firebase](https://wdijeopardy.firebaseapp.com)
+## [Click to play, hosted on Firebase](https://wdijeopardy.firebaseapp.com)
 
 *Get Started:*
 
-**Terminal**
-
+From terminal:
 * 1. Clone Repository ``git clone https://github.com/airbr/WDI7-Jeopardy``
 * 2. Change into the directory ``cd ./Project1-Jeopardy``
 * 3. Turn on your audio (Optional... but highly reccomended!)
 * 4. Open index.html in your web browser ``open public/index.html``
-* 5. Enjoy!
+* 5. Enjoy
 
 --
 ### WDI Jeopardy by Morgan Murrah - v2.0
 
-This game started as one of my earliest projects and was my first application of HTML, CSS, Javsacript and JQuery. This was also originally project one from taking the web development immersive at General Assembly. I have been adding bits and pieces to it since then.
+This game started as one of my first ever web projects and was my first application of HTML, CSS, Javsacript and JQuery.
 
-### Current version: V2.0:
-
-This game has been simplified/ a lot of refactoring of my horrible earlier code. The game now makes use of the new CSS Grid specification [which is not fully supported yet](http://caniuse.com/#feat=css-grid). Since its a simple game I figured its a great place to try this new shiny thing in the world of CSS. 
+This game has been simplified/ a lot of refactoring of my horrible earlier code. The game now makes use of the new CSS Grid specification [which is not fully supported yet](http://caniuse.com/#feat=css-grid). 
 
 ### Current Game:
 
@@ -27,8 +24,6 @@ This game has been simplified/ a lot of refactoring of my horrible earlier code.
 
 ![](wdi-jeopardy-v1.5-main.png)
 ![](wdi-jeopardy-v1.5-modal.png)
-
-
 
 #### Future develoment:
 
