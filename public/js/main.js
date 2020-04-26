@@ -33,6 +33,11 @@ $(function() {
     $(this).remove();
     });
 });
+
+$("#closesubmit").on("click", function(){
+  submit();
+});
+
  // Submit Question Answer
 function submit(a, b) {
   var selected = $(".modal-body input:checked").val();
