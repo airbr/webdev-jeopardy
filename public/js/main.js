@@ -1,6 +1,4 @@
-// console.group('Main.js loaded');
-
-var questions = [
+const questions = [
 /* Category 1 Questions */
   {
     prompt: 'What is the expansion of HTML?',
@@ -9,12 +7,12 @@ var questions = [
     cashPrize: 10  },
   {
     prompt: 'What is the current version of HTML?',
-    options: ['HTMLv5.1', 'HTML5', 'HTML2016', 'HTMLC'],
+    options: ['HTMLv5000', 'HTML5', 'HTML2016', 'HTMLC'],
     correctAnswer: 'HTML5',
     cashPrize: 50
   },
   {
-    prompt: 'What seperate language has largely replaced use of <style></style> elements?',
+    prompt: 'What language placed in a seperate file has largely replaced use of <style></style> elements?',
     options: ['HTMLS Code', 'Style Sheet Language', 'CSS or Central Style Sheet', 'CSS or Cascading Style Sheets'],
     correctAnswer: 'CSS or Cascading Style Sheets',
     cashPrize: 100
@@ -26,8 +24,8 @@ var questions = [
     cashPrize: 500
   },
   {
-    prompt: 'HTML is the principal source for attributes of Nodes in the DOM. Browsers do not usually allow cross-site actions but there is one major exception:',
-    options: ['Get Requests', 'Ping Commands', 'iFrames', 'XSS '],
+    prompt: 'Browsers do not usually allow cross-site actions but there is one major exception:',
+    options: ['Get Requests', 'Ping Commands', 'iFrames', 'Git'],
     correctAnswer: 'iFrames',
     cashPrize: 1000
   },
@@ -38,13 +36,13 @@ var questions = [
     correctAnswer: 'Cascading Style Sheets',
     cashPrize: 10  },
   {
-    prompt: 'The "<Span> </Span>" has what kind of default property?',
+    prompt: 'The "<Span> </Span>" has what as a default property?',
     options: ['set-length', 'block', 'timestamp', 'inline'],
     correctAnswer: 'inline',
     cashPrize: 50
   },
   {
-    prompt: 'The * selector applies to what?',
+    prompt: 'The * css selector applies to what?',
     options: ['Everything', 'Wildcard elements', 'Multiplication Functions', 'Elements with the Id of *'],
     correctAnswer: 'Everything',
     cashPrize: 100
@@ -63,7 +61,7 @@ var questions = [
   },
   /* Category 3 Questions */
  {
-    prompt: 'Which is a coding language or library not relevant to modern Javascript?',
+    prompt: 'Which is a coding language or library not actually relevant to modern Javascript?',
     options: ['Java', 'ECMAScript', 'Ajax', 'JQuery' ],
     correctAnswer: 'Java',
     cashPrize: 10  },
@@ -86,10 +84,10 @@ var questions = [
     cashPrize: 500
   },
   {
-    prompt: 'Imagine one hundred Samurai are standing in a circle each holding a sword. The first samurai kills the samurai next to them (the second).  The third Samurai then kills the forth Samurai and this process of Samurai killing the Samurai directly next to them continues until there is only one Samurai left standing at the end. You write a JS program with these Samurai in an Array and use functions to determine which of the Samurai will be the last one alive. What JS functions are required to do this?',
-    options: ['For Loop, If Else Function, Array Shift, Array Splice', 'Fizzbuzz, Else Statements', 'Loop Functions with Calculator Integers', 'Array Reduce'],
-    correctAnswer: 'For Loop, If Else Function, Array Shift, Array Splice',
-    cashPrize: 1000
+    prompt: 'Can you change the properties on a const variable?',
+    options: ['Never','Yes, by default','Yes, only if $constprop is present','Yes, if in an IIFE'],
+    correctAnswer: 'Yes, by default',
+    cashPrize: 1000 
   },
   /* Category 4 Questions */
  {
@@ -110,7 +108,7 @@ var questions = [
     cashPrize: 100
   },
   {
-    prompt: 'Someone on the internet tells you to enter a "rm -rf" command into your terminal. This would:',
+    prompt: 'Someone shady on the internet tells you to enter a "rm -rf" command into your terminal on your root directory. Doing this would:',
     options: ['Remake your filedomains', 'Rename your file register', 'Recursively rename all your files with the tag rm', 'Irreparably damage your file system'],
     correctAnswer: 'Irreparably damage your file system',
     cashPrize: 500
@@ -169,11 +167,9 @@ function playchaching() {
 function pausechaching() {
     chaching.pause();
 }
-
 // Global variable  score...
 var score = 0;
 //
-
 $(function() {
    // Hide the Modal after submit
     $("#closesubmit").click(function(){
