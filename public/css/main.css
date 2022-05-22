@@ -71,6 +71,10 @@
   width: 100vw;
   align-content: center;
 }
+.negative {
+      color: red !important;
+}
+  
 /*.question {*/
     /*height:100px;*/
     /*vertical-align: middle;*/

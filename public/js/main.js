@@ -47,15 +47,25 @@ function submit(a, b) {
     chaching.play();
     window.addprize = questions[window.currentQuestion].cashPrize;
     score = score + window.addprize;
-    console.log(score);
     $('#score1').html("  $"+score);
+    if (!Math.sign(score)){
+      $('#score1').addClass( "negative" );
+    } else {
+      $('#score1').removeClass( "negative" );
+    }
   }
   // Determine if incorrect answer was chosen and alert prize
   if ( selected !== questions[window.currentQuestion].correctAnswer ) {
     buzzer.play();
     window.subprize = questions[window.currentQuestion].cashPrize;
     score = score - window.subprize;
+    console.log(score);
     $('#score1').html("  $"+score);
+    if (Math.sign(score)){
+      $('#score1').addClass( "negative" );
+    } else {
+      $('#score1').removeClass( "negative" );
+    }
   }
 }
 // Get question info from array, prepare
@@ -88,7 +98,7 @@ $(function() {
   });
 });
 $("#myModal").on('hidden.bs.modal', function () {
-            console.log('The modal is now hidden.');
+            // console.log('The modal is now hidden.');
     });
  $('.modal-body input:checked').submit(function() {
     $('#myModal').modal('toggle');
