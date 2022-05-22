@@ -3,67 +3,83 @@
 }
 
 #topjlogo {
-    width: 100%;
-    max-width: 600px;
+  width: 100%;
+  max-width: 600px;
 }
+
 @font-face {
   font-family: "Korinna BT";
-    src: url('fonts/Korinna Bold BT.eot');
-    src: url('fonts/Korinna Bold BTeot?#iefix') format("embedded-opentype"),
+  src: url('fonts/Korinna Bold BT.eot');
+  src: url('fonts/Korinna Bold BTeot?#iefix') format("embedded-opentype"),
     url('fonts/Korinna Bold BT.woff') format("woff"),
     url('fonts/Korinna Bold BT.ttf') format("truetype"),
     url('fonts/Korinna Bold BT.svg#Korinna BT') format("svg");
 }
+
 .question {
   justify-self: center;
   width: 100%
 }
+
 .panel-heading {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
 }
+
 .gridbtn {
   width: 100%;
   height: 90px;
   background-color: darkblue;
 }
+
 .gridstyling {
-    display: grid;
-    grid-template-rows: [ten] 1fr [fifty] 1fr [onehundred] 1fr [fivehundred] 1fr [onethousand] 1fr;
-    grid-auto-flow: column;
-    grid-gap: 10px;
+  display: grid;
+  grid-template-rows: [ten] 1fr [fifty] 1fr [onehundred] 1fr [fivehundred] 1fr [onethousand] 1fr;
+  grid-auto-flow: column;
+  grid-gap: 10px;
 }
-.qcategory-title, .question, .scoretally {
+
+.qcategory-title,
+.question,
+.scoretally {
   font-family: Korinna BT;
 }
+
 .container-fluid {
   max-width: 900px
 }
+
 .logo {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 #score1 {
   color: green;
   font-size: 30px;
 }
+
 .navbar-header {
   max-width: 900px;
 }
+
 .button {
   height: 100%;
   width: 100%;
 }
+
 .btn-outline-secondary {
   display: flex;
   flex-direction: row;
 }
+
 .top {
   height: 120px;
   width: 100%;
   background-color: red;
 }
+
 .playeropt {
   display: flex;
   flex-direction: row;
@@ -71,35 +87,33 @@
   width: 100vw;
   align-content: center;
 }
+
 .negative {
-      color: red !important;
+  color: red !important;
 }
-  
-/*.question {*/
-    /*height:100px;*/
-    /*vertical-align: middle;*/
-    /*text-align: center;*/
-    /*font-size: 1.5em;*/
-    /*padding-top: 15px;*/
-    /*cursor: pointer;*/
-/*}*/
+
 .gametitle {
   display: flex;
   align-items: center;
 }
+
 #headline {
   font-size: 30px;
 }
+
 .panel-footer {
   display: flex;
   justify-content: space-between;
 }
+
 h4 {
   font-size: 35px;
 }
+
 h1 {
   color: red;
 }
+
 p {
-font-size: 20px;
+  font-size: 20px;
 }

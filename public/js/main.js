@@ -3,75 +3,79 @@ import questions from './questions.js';
 // Buzzer & Chaching sounds
 var buzzer = document.getElementById("buzzer");
 buzzer = window.buzzer;
+
 function playbuzzer() {
-    buzzer.play();
+  buzzer.play();
 }
+
 function pausebuzzer() {
-    buzzer.pause();
+  buzzer.pause();
 }
 var chaching = document.getElementById("chaching");
 chaching = window.chaching;
+
 function playchaching() {
-    chaching.play();
+  chaching.play();
 }
+
 function pausechaching() {
-    chaching.pause();
+  chaching.pause();
 }
 // Global variable  score...
 var score = 0;
 //
-$(function() {
-   // Hide the Modal after submit
-    $("#closesubmit").click(function(){
+$(function () {
+  // Hide the Modal after submit
+  $("#closesubmit").click(function () {
     $("#myModal").modal("hide");
-    });
+  });
 });
-$(function() {
+$(function () {
   // Remove Element after click
-  $(".gridbtn").click(function() {
+  $(".gridbtn").click(function () {
     $(this).addClass("disabled");
     $(this).remove();
-    });
+  });
 });
 
-$("#closesubmit").on("click", function(){
+$("#closesubmit").on("click", function () {
   submit();
 });
 
- // Submit Question Answer
+// Submit Question Answer
 function submit(a, b) {
   var selected = $(".modal-body input:checked").val();
   // Determine if correct answer was chosen and alert prize
-  if ( selected === questions[window.currentQuestion].correctAnswer ) {
+  if (selected === questions[window.currentQuestion].correctAnswer) {
     // console.log(selected + " was selected");
     chaching.play();
     window.addprize = questions[window.currentQuestion].cashPrize;
     score = score + window.addprize;
-    $('#score1').html("  $"+score);
-    if (!Math.sign(score)){
-      $('#score1').addClass( "negative" );
+    $('#score1').html("  $" + score);
+    if (!Math.sign(score)) {
+      $('#score1').addClass("negative");
     } else {
-      $('#score1').removeClass( "negative" );
+      $('#score1').removeClass("negative");
     }
   }
   // Determine if incorrect answer was chosen and alert prize
-  if ( selected !== questions[window.currentQuestion].correctAnswer ) {
+  if (selected !== questions[window.currentQuestion].correctAnswer) {
     buzzer.play();
     window.subprize = questions[window.currentQuestion].cashPrize;
     score = score - window.subprize;
     console.log(score);
-    $('#score1').html("  $"+score);
-    if (Math.sign(score)){
-      $('#score1').addClass( "negative" );
+    $('#score1').html("  $" + score);
+    if (Math.sign(score)) {
+      $('#score1').addClass("negative");
     } else {
-      $('#score1').removeClass( "negative" );
+      $('#score1').removeClass("negative");
     }
   }
 }
 // Get question info from array, prepare
 function getOptions(question) {
   var $buttonDiv = $('<div id="disabled" class="btn-group" data-toggle="buttons"></div>');
-  question.options.forEach(function(opt) {
+  question.options.forEach(function (opt) {
     var $div = $('<div class="radio">');
     var $label = $('<label class="radio-inline"></label');
     var $input = $('<input type="radio" name="opts" value="' + opt + '">');
@@ -84,7 +88,7 @@ function getOptions(question) {
 }
 // Populate modal window with specific question
 function showQuestion(event, $modal) {
-  var button = $(event.relatedTarget);  // Button that triggered the modal
+  var button = $(event.relatedTarget); // Button that triggered the modal
   var num = parseInt(button.data('num'));
   var question = questions[num];
   window.currentQuestion = num;
@@ -92,15 +96,15 @@ function showQuestion(event, $modal) {
   $modal.find('.modal-body').empty().append(getOptions(question));
 }
 // Modal show/close functions
-$(function() {
-  $("#myModal").on('show.bs.modal', function(event) {
+$(function () {
+  $("#myModal").on('show.bs.modal', function (event) {
     showQuestion(event, $(this));
   });
 });
 $("#myModal").on('hidden.bs.modal', function () {
-            // console.log('The modal is now hidden.');
-    });
- $('.modal-body input:checked').submit(function() {
-    $('#myModal').modal('toggle');
-    return false;
+  // console.log('The modal is now hidden.');
+});
+$('.modal-body input:checked').submit(function () {
+  $('#myModal').modal('toggle');
+  return false;
 });
