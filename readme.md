@@ -1,22 +1,26 @@
-## [Click here to play, hosted live on Firebase](https://wdijeopardy.firebaseapp.com)
+
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d2988db9-2b31-44b8-8174-2558da78c846/deploy-status)](https://app.netlify.com/sites/webdev-jeopardy/deploys)
+
+
+## [Live Deployment on Netlify, Click to Play](https://webdev-jeopardy.netlify.app/)
+
+## [(old) Deployment on Firebase, Click to Play](https://wdijeopardy.firebaseapp.com)
 
 *Get Started:*
 
 Using git from the command line:
 
-* 1. Clone Repository ``git clone https://github.com/airbr/webdev-jeopardy.git`
-* 2. Change into the directory ``cd ./webdev-jeopardy``
-* 3. Turn on your audio (Optional... but highly reccomended!)
-* 4. Open index.html in your web browser ``open public/index.html``
-* 5. Enjoy
+ 1. Clone Repository
+ 2. Turn on your audio (Optional... but highly reccomended!)
+ 3. Open index.html in your web browser `open public/index.html`
+ 4. Enjoy
 
 Using Docker via [Dockerhub](https://hub.docker.com/repository/docker/airbr/webdev-jeopardy):
 
 1. `docker run -d -P --name jeopardy airbr/webdev-jeopardy` 
 2. `docker port jeopardy`
 3. Visit at the ports assigned!
-
-
 
 --
 ### Web Dev Jeopardy by Morgan Murrah - v3.0
