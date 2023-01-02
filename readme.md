@@ -5,8 +5,6 @@
 
 ## [Live Deployment on Netlify, Click to Play](https://webdev-jeopardy.netlify.app/)
 
-## [(old) Deployment on Firebase, Click to Play](https://wdijeopardy.firebaseapp.com)
-
 *Get Started:*
 
 Using git from the command line:
@@ -16,32 +14,32 @@ Using git from the command line:
  3. Open index.html in your web browser `open public/index.html`
  4. Enjoy
 
-Using Docker via [Dockerhub](https://hub.docker.com/repository/docker/airbr/webdev-jeopardy):
+<!-- Using Docker via [Dockerhub](https://hub.docker.com/repository/docker/airbr/webdev-jeopardy):
 
 1. `docker run -d -P --name jeopardy airbr/webdev-jeopardy` 
 2. `docker port jeopardy`
-3. Visit at the ports assigned!
+3. Visit at the ports assigned! -->
 
---
-### Web Dev Jeopardy by Morgan Murrah - v3.0
+### Web Dev Jeopardy by Morgan Murrah - v4.0
+
+<br>
+<br>
 
 ### Current Game:
 
-![](mobilescreenshot-jeopardy.png)
+![](readme-assets/mobilescreenshot-jeopardy.png)
 
-This game started as one of my first ever web projects and was my first application of HTML, CSS, Javsacript and JQuery. This game has been simplified/ a lot of refactoring of my horrible earlier code but could be improved. The game now makes use of the new CSS Grid specification [which is not fully supported yet](http://caniuse.com/#feat=css-grid). 
+This game started as one of my first ever web projects and was my first application of HTML, CSS, Javsacript and JQuery. This was my beginning. 
+#### Future develoment:
 
-In 2020, I have decided as a learning exercise to attempt to dockerize this project. This is now published at dockerhub at `airbr/webdev-jeopardy`.
+* Performance optimize the game by running Lighthouse Audits
+* Make the game competitive/two player
+* Add a high-score table, or way of saving/sharing a score result
 
 ### Older Screenshots:
 
-![](wdi-jeopardy-v1.5-main.png)
-![](wdi-jeopardy-v1.5-modal.png)
-
-#### Future develoment:
-
-* Make the game competitive/two player
-* Add a high-score table, or way of saving/sharing a score result
+![](readme-assets/wdi-jeopardy-v1.5-main.png)
+![](readme-assets/wdi-jeopardy-v1.5-modal.png)
 
 #### Technologies used in this game include:
 
@@ -52,7 +50,7 @@ In 2020, I have decided as a learning exercise to attempt to dockerize this proj
 
 Resources referred to include:
 
-* [CSS Grid] (https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
+* [CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
 * [Bootstrap Modal](http://www.w3schools.com/bootstrap/bootstrap_modal.asp)
 * [JSON Howto](http://www.w3schools.com/json/json_eval.asp)
 * [Bootstrap JS Modals documentation](https://getbootstrap.com/javascript/#modals)
