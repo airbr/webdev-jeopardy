@@ -11,7 +11,7 @@ Using git from the command line:
 
  1. Clone Repository
  2. Turn on your audio (Optional... but highly reccomended!)
- 3. Open index.html in your web browser `open public/index.html`
+ 3. Open public/index.html with a server of your choice in your web browser `http-server public/`
  4. Enjoy
 
 <!-- Using Docker via [Dockerhub](https://hub.docker.com/repository/docker/airbr/webdev-jeopardy):
