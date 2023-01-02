@@ -25,20 +25,15 @@ function pausechaching() {
 var score = 0;
 //
 $(function () {
-  // Hide the Modal after submit
-  $("#closesubmit").click(function () {
-    $("#myModal").modal("hide");
-  });
-});
-$(function () {
   // Remove Element after click
-  $(".gridbtn").click(function () {
+  $(".gridbtn").on("click", function () {
     $(this).addClass("disabled");
     $(this).remove();
   });
 });
 
 $("#closesubmit").on("click", function () {
+  $('#myModal').modal('toggle');
   submit();
 });
 
@@ -102,9 +97,9 @@ $(function () {
   });
 });
 $("#myModal").on('hidden.bs.modal', function () {
-  // console.log('The modal is now hidden.');
+  console.log('The modal is now hidden.');
 });
-$('.modal-body input:checked').submit(function () {
-  $('#myModal').modal('toggle');
-  return false;
-});
+// $('.modal-body input:checked').on(function () {
+//   $('#myModal').modal('toggle');
+//   return false;
+// });
