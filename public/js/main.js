@@ -1,5 +1,6 @@
 import questions from './questions.js';
 
+
 // Buzzer & Chaching sounds
 var buzzer = document.getElementById("buzzer");
 buzzer = window.buzzer;
@@ -69,7 +70,7 @@ function submit(a, b) {
 }
 // Get question info from array, prepare
 function getOptions(question) {
-  var $buttonDiv = $('<div id="disabled" class="btn-group" data-bs-toggle="buttons"></div>');
+  var $buttonDiv = $('<div id="disabled" class="btn-group" data-bs-toggle="buttons"></div><br>');
   question.options.forEach(function (opt) {
     var $div = $('<div class="radio">');
     var $label = $('<label class="radio-inline"></label');
