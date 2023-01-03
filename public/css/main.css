@@ -16,6 +16,10 @@
     url('fonts/Korinna Bold BT.svg#Korinna BT') format("svg");
 }
 
+.question button {
+  color: white;
+}
+
 .question {
   justify-self: center;
   width: 100%
@@ -61,7 +65,10 @@
 }
 
 .navbar-header {
-  max-width: 900px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .button {

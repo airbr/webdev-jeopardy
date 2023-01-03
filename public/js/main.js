@@ -69,7 +69,7 @@ function submit(a, b) {
 }
 // Get question info from array, prepare
 function getOptions(question) {
-  var $buttonDiv = $('<div id="disabled" class="btn-group" data-toggle="buttons"></div>');
+  var $buttonDiv = $('<div id="disabled" class="btn-group" data-bs-toggle="buttons"></div>');
   question.options.forEach(function (opt) {
     var $div = $('<div class="radio">');
     var $label = $('<label class="radio-inline"></label');
