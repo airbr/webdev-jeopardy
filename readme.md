@@ -21,10 +21,7 @@ Using git from the command line:
 3. Visit at the ports assigned! -->
 
 ### Web Dev Jeopardy by Morgan Murrah - v4.0
-
 <br>
-<br>
-
 ### Current Game:
 
 ![](readme-assets/mobilescreenshot-jeopardy.png)
@@ -45,17 +42,10 @@ This game started as one of my first ever web projects and was my first applicat
 
  * HTML5
  * CSS3
- * Bootstrap 3.3.7
- * JQuery
-
-Resources referred to include:
-
-* [CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
-* [Bootstrap Modal](http://www.w3schools.com/bootstrap/bootstrap_modal.asp)
-* [JSON Howto](http://www.w3schools.com/json/json_eval.asp)
-* [Bootstrap JS Modals documentation](https://getbootstrap.com/javascript/#modals)
-* [jQuery API documentation](https://api.jquery.com/)
-
+ * ~~Bootstrap 3.3.7~~
+    * Bootstrap Upgraded Bootstrap to 5.0.2
+ * ~~ JQuery 3.1~~
+    * jQuery Upgraded to 3.6.3
 
 
 
