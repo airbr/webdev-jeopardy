@@ -47,6 +47,13 @@ This game started as one of my first ever web projects and was my first applicat
  * ~~ JQuery 3.1~~
     * jQuery Upgraded to 3.6.3
 
+Resources referred to include:
+
+* [CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
+* [Bootstrap JS Modals documentation](https://getbootstrap.com/javascript/#modals)
+* [jQuery API documentation](https://api.jquery.com/)
+
+
 
 
 
