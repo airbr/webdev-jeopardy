@@ -21,8 +21,10 @@ Using git from the command line:
 3. Visit at the ports assigned! -->
 
 ### Web Dev Jeopardy by Morgan Murrah - v4.0
-<br>
+
+
 ### Current Game:
+
 
 ![](readme-assets/mobilescreenshot-jeopardy.png)
 
