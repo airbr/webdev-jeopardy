@@ -44,7 +44,7 @@ This game started as one of my first ever web projects and was my first applicat
  * CSS3
  * ~~Bootstrap 3.3.7~~
     * Bootstrap Upgraded Bootstrap to 5.0.2
- * ~~ JQuery 3.1~~
+ * ~~JQuery 3.1~~
     * jQuery Upgraded to 3.6.3
 
 Resources referred to include:
