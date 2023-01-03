@@ -27,6 +27,8 @@ Using git from the command line:
 ![](readme-assets/mobilescreenshot-jeopardy.png)
 
 This game started as one of my first ever web projects and was my first application of HTML, CSS, Javsacript and JQuery. This was my beginning. 
+
+In 2023 I have started to revisit this project for some fun and upgraded the libraries used and refactored to make them work.
 #### Future develoment:
 
 * Performance optimize the game by running Lighthouse Audits
@@ -43,7 +45,7 @@ This game started as one of my first ever web projects and was my first applicat
  * HTML5
  * CSS3
  * ~~Bootstrap 3.3.7~~
-    * Bootstrap Upgraded Bootstrap to 5.0.2
+    * Bootstrap Upgraded to 5.0.2
  * ~~JQuery 3.1~~
     * jQuery Upgraded to 3.6.3
 
