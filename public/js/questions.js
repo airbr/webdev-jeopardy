@@ -1,38 +1,38 @@
 const questions = [
   /* Category 1 Questions */
   {
-    prompt: 'What is the expansion of HTML?',
-    options: ['Hyper Text Markup Language', 'Holding Text Marker Language', 'Hyperlink Text Management Language', 'Holding Text Modal Language'],
-    correctAnswer: 'Hyper Text Markup Language',
+    prompt: 'Who describes big data as an inability of conventional/traditional data management methods?',
+    options: ['NASA', 'National Institutes of Standards & Technology (NIST)', 'U.S. National Science Foundation (NSF)', 'All of the above'],
+    correctAnswer: 'All of the above',
     cashPrize: 10
   },
   {
-    prompt: 'What is the current version of HTML?',
-    options: ['HTMLv5000', 'HTML5', 'HTML2016', 'HTMLC'],
-    correctAnswer: 'HTML5',
+    prompt: 'What were some challenges posed by the NSF?',
+    options: ['Data sets being too numerous and too large', 'Data sets too unorganized and too heterogenous', 'Limitations in our ability to use data', 'All of the above'],
+    correctAnswer: 'All of the above',
     cashPrize: 50
   },
   {
-    prompt: 'What language placed in a seperate file has largely replaced use of <style></style> elements?',
-    options: ['HTMLS Code', 'Style Sheet Language', 'CSS or Central Style Sheet', 'CSS or Cascading Style Sheets'],
-    correctAnswer: 'CSS or Cascading Style Sheets',
+    prompt: 'Which element does not belong in the 5-V framework?',
+    options: ['Veracity', 'Voracity', 'Variety', 'Value'],
+    correctAnswer: 'Voracity',
     cashPrize: 100
   },
   {
-    prompt: 'What new element type introduced in HTML5 is functionally the same as a Div?',
-    options: ['Semantic Tags', 'PseudoDivs', 'DivisionIDs', 'Division Notation'],
-    correctAnswer: 'Semantic Tags',
+    prompt: 'Which of the following statements are not true?',
+    options: ['The Internet Assigned Numbers Authority (IANA) specified the 8 top-level media types', 'Media types and MIME types are two different things', 'Request for Comments (RFCs) were managed by different groups over the years', 'RFC 822 was the standard for ARPA in the early 80s'],
+    correctAnswer: 'Media types and MIME types are two different things',
     cashPrize: 500
   },
   {
-    prompt: 'Browsers do not usually allow cross-site actions but there is one major exception:',
-    options: ['Get Requests', 'Ping Commands', 'iFrames', 'Git'],
-    correctAnswer: 'iFrames',
+    prompt: 'Which of the following statements are not true?',
+    options: ['Initially there were only 6 top level MIME types', 'RFC 2046 improves on RFC 2045 by differentiating discrete and composite types', 'RFC 2045 addressed RFC 822\'s limitation with email attachments', 'In RFC 2046 new extension types can be added without IANA'],
+    correctAnswer: 'Initially there were only 6 top level MIME types',
     cashPrize: 1000
   },
   /* Category 2 Questions */
   {
-    prompt: 'What is the expansion of CSS?',
+    prompt: 'What is the expansion of aoeusnth?',
     options: ['Cascading Style Sheets', 'Central Style Server', 'Control Set Styles', 'C Safe Server'],
     correctAnswer: 'Cascading Style Sheets',
     cashPrize: 10
