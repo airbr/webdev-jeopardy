@@ -32,71 +32,71 @@ const questions = [
   },
   /* Category 2 Questions */
   {
-    prompt: 'What is the expansion of aoeusnth?',
-    options: ['Cascading Style Sheets', 'Central Style Server', 'Control Set Styles', 'C Safe Server'],
-    correctAnswer: 'Cascading Style Sheets',
+    prompt: 'Which of the following are true about web duplicates?',
+    options: ['Exact matches can be verified with hashes (SHA-1, MD5, etc.)', 'Different URLs can point to the same exact web page', 'Duplicate detection is used to optimize web crawling and data analysis (clustering, spam detection, etc.)', 'All of the above'],
+    correctAnswer: 'All of the above',
     cashPrize: 10
   },
   {
-    prompt: 'The "<Span> </Span>" has what as a default property?',
-    options: ['set-length', 'block', 'timestamp', 'inline'],
-    correctAnswer: 'inline',
+    prompt: 'Which of the following is not true about distance measures',
+    options: ['Distances are >= 0 (0 being an exact match) and bidirectionally symmetric', 'They\'re used to sort/cluster and compare hashed documents', 'Edit distance measures the changes needed to get from one set of features to another', 'Euclidean distance treats documents as vectors and measures the angle between them'],
+    correctAnswer: 'Euclidean distance treats documents as vectors and measures the angle between them',
     cashPrize: 50
   },
   {
-    prompt: 'The * css selector applies to what?',
-    options: ['Everything', 'Wildcard elements', 'Multiplication Functions', 'Elements with the Id of *'],
-    correctAnswer: 'Everything',
+    prompt: 'Jaccard similarity…',
+    options: ['Is related to computing shingles', 'Measures resemblance & containment (how much of one document is in another)', 'All of the above', 'None of the above'],
+    correctAnswer: 'All of the above',
     cashPrize: 100
   },
   {
-    prompt: 'What feature recently introduced in CSS 3 addresses issues with "floats"?',
-    options: ['Center Flagpoints', 'Flexbox', 'Flexpoints', 'FloatV2.0'],
-    correctAnswer: 'Flexbox',
+    prompt: 'What are some use cases for automated file detection?',
+    options: ['Security (antivirus, firewalls, etc.)', 'Data processing (ex. for forensics, scientific research, or web crawling)', 'Data distribution (repositories)', 'All of the above'],
+    correctAnswer: 'All of the above',
     cashPrize: 500
   },
   {
-    prompt: 'CSS is hard. What is one feature that makes it hard compared to other languages? ',
-    options: ['Lack of Case Examples', 'No Error Output', 'Inclusion of complex variable functions', 'Lack of documentation'],
-    correctAnswer: 'No Error Output',
+    prompt: 'What is not an example of a content-based (non basic) file detection method?',
+    options: ['Byte Frequency Analysis/Distribution (BFD)', '/etc/magic and container files', 'File Header Trailer (FHT)', 'Byte Frequency (Cross) Correlation (BFC)'],
+    correctAnswer: '/etc/magic and container files',
     cashPrize: 1000
   },
   /* Category 3 Questions */
   {
-    prompt: 'Which is a coding language or library not actually relevant to modern Javascript?',
-    options: ['Java', 'ECMAScript', 'Ajax', 'JQuery'],
-    correctAnswer: 'Java',
+    prompt: 'What is not a reason why we would use a content-based (non basic) file detection method?',
+    options: ['Per McDaniel & Heydari (2003), content-based methods are more accurate, low-maintenance (flexible), and easier to automate', 'Content-independent methods are easily spoofed and harder to maintain', 'All of the above', 'None of the above'],
+    correctAnswer: 'All of the above',
     cashPrize: 10
   },
   {
-    prompt: 'Javascript is usually described as a " "-based language?',
-    options: ['Relational', 'COBOL', 'Object', 'Directional'],
-    correctAnswer: 'Object',
+    prompt: 'Tag/annotation ratios (or histogram clustering) are part of which step of the text extraction process?',
+    options: ['(1) Identification of text (via metadata, file headers, etc.)', '(2) Structural and contextual analysis (so we know what to do with it)', '(3) Featurize/summarize text (to identify/highlight important parts)', 'None of the above'],
+    correctAnswer: '(2) Structural and contextual analysis (so we know what to do with it)',
     cashPrize: 50
   },
   {
-    prompt: 'JSON is: ',
-    options: ['A Javascript engine', 'A text format readable by Javascript', 'A Javascript library', 'A Javascript function'],
-    correctAnswer: 'A text format readable by Javascript',
+    prompt: 'BoilerPipe algorithms (or boilerplate detection) are part of which step of the text extraction process?',
+    options: ['(1) Identification of text (via metadata, file headers, etc.)', '(2) Structural and contextual analysis (so we know what to do with it)', '(3) Featurize/summarize text (to identify/highlight important parts)', 'None of the above'],
+    correctAnswer: '(3) Featurize/summarize text (to identify/highlight important parts)',
     cashPrize: 100
   },
   {
-    prompt: 'Angular JS is an example of:',
-    options: ['A JS Framework', 'an open-source, cross-platform runtime environment for developing server-side web applications', 'A JS library', 'An AJAX library'],
-    correctAnswer: 'A JS Framework',
+    prompt: 'What is not one of the main uses metadata?',
+    options: ['Using structural metadata to see how the data "fits together"', 'Using administrative metadata to manage permissions/rights', 'Using structural metadata to determine how to preserve the data', 'Using descriptive metadata to identify the data'],
+    correctAnswer: 'Using structural metadata to determine how to preserve the data',
     cashPrize: 500
   },
   {
-    prompt: 'Can you change the properties on a const variable?',
-    options: ['Never', 'Yes, by default', 'Yes, only if $constprop is present', 'Yes, if in an IIFE'],
-    correctAnswer: 'Yes, by default',
+    prompt: 'Who describes metadata as information used to describe/explain, locate/retrieve, or use/manage information?',
+    options: ['National Information Standards Organization (NISO)', 'Wikipedia', 'All of the above', 'None of the above'],
+    correctAnswer: 'National Information Standards Organization (NISO)',
     cashPrize: 1000
   },
   /* Category 4 Questions */
   {
-    prompt: 'The Terminal or command line is an example of a?',
-    options: ['Interconnected Network', 'Read-Eval-Print-Loop', 'C++ Library Object', 'Skynet'],
-    correctAnswer: 'Read-Eval-Print-Loop',
+    prompt: 'What is not true about Dublin Core?',
+    options: ['It is based off the ISO-11179 metadata standard', 'It uses 15 elements to describe any electronic resource', 'It\'s the inspiration for other metadata syntax (ex. Schema.org)', 'It is known for its support in marking up research papers in the humanities'],
+    correctAnswer: 'It is known for its support in marking up research papers in the humanities',
     cashPrize: 10
   },
   {
