@@ -26,7 +26,7 @@ const questions = [
   },
   {
     prompt: 'Which of the following statements are not true?',
-    options: ['Initially there were only 6 top level MIME types', 'RFC 2046 improves on RFC 2045 by differentiating discrete and composite types', 'RFC 2045 addressed RFC 822\'s limitation with email attachments', 'In RFC 2046 new extension types can be added without IANA'],
+    options: ['Initially there were only 6 top level MIME types', 'RFC 2046 improves on RFC 2045 by differentiating discrete and composite types', 'RFC 2045 addressed RFC 822\'s limitation with email attachments and defined usage of MIME types', 'In RFC 2046 new extension types can be added without IANA'],
     correctAnswer: 'Initially there were only 6 top level MIME types',
     cashPrize: 1000
   },
