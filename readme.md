@@ -7,8 +7,6 @@
 
 *Get Started:*
 
-Using git from the command line:
-
  1. Clone Repository
  2. Turn on your audio (Optional... but highly reccomended!)
  3. Open public/index.html with a server of your choice in your web browser `http-server public/`
@@ -31,16 +29,12 @@ Using git from the command line:
 This game started as one of my first ever web projects and was my first application of HTML, CSS, Javsacript and JQuery. This was my beginning. 
 
 In 2023 I have started to revisit this project for some fun and upgraded the libraries used and refactored to make them work.
-#### Future develoment:
+
+#### Future development:
 
 * Performance optimize the game by running Lighthouse Audits
 * Make the game competitive/two player
 * Add a high-score table, or way of saving/sharing a score result
-
-### Older Screenshots:
-
-![](readme-assets/wdi-jeopardy-v1.5-main.png)
-![](readme-assets/wdi-jeopardy-v1.5-modal.png)
 
 #### Technologies used in this game include:
 
