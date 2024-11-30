@@ -8,8 +8,8 @@ const questions = [
   },
   {
     prompt: 'What is the current version of HTML?',
-    options: ['HTMLv5000', 'HTML', 'HTML2016', 'HTMLC'],
-    correctAnswer: 'HTML',
+    options: ['HTMLv5000', 'HTML5', 'HTML2016', 'HTMLC'],
+    correctAnswer: 'HTML5',
     cashPrize: 50
   },
   {
@@ -125,33 +125,33 @@ const questions = [
   },
   /* Category 5 Questions */
   {
-    prompt: 'What is DOMContentLoaded?',
-    options: ['A meaningless trivial thing', 'A web performance certification', 'A rare error', 'A timing event for performance measurement'],
-    correctAnswer: 'A timing event for performance measurement',
+    prompt: 'Use of "Alert" popup windows is often considered bad practice as browsers and users are hostile to pop-ups. What are the other two native Javascript popup functions?',
+    options: ['Warning, Confirm', 'Confirm, Refresh', 'Prompt, Confirm', 'Prompt, Notice'],
+    correctAnswer: 'Prompt, Confirm',
     cashPrize: 10
   },
   {
-    prompt: 'What is the best lighthouse score possible?',
-    options: ['A+', 'Four Hundreds', 'Certified', 'Correct'],
-    correctAnswer: 'Four Hundreds',
+    prompt: 'The man page for Git describes it as:',
+    options: ['That stupid content tracker', 'A Content Version Tracker', 'General-Index-Tracker', 'A Revision Editor'],
+    correctAnswer: 'That stupid content tracker',
     cashPrize: 50
   },
   {
-    prompt: 'Which of these are not Performance products?',
-    options: ['SpeedCurve', 'mPulse', 'DebugBear', 'SpinningTree'],
-    correctAnswer: 'SpinningTree',
+    prompt: 'What version of what coding language introduced the audio function contained in this page?',
+    options: ['ECMAScript', 'MP3ML', 'HTML5', 'WavML'],
+    correctAnswer: 'HTML5',
     cashPrize: 100
   },
   {
-    prompt: 'What is not a Core Web Vital?',
-    options: ['FID', 'INP', 'CLS', 'LCP'],
-    correctAnswer: 'FID',
+    prompt: 'Which of these frameworks include support for TypeScript?',
+    options: ['AngularJS', 'Angular', 'JQuery', 'Whitespace'],
+    correctAnswer: 'Angular',
     cashPrize: 500
   },
   {
-    prompt: 'What is RUM?',
-    options: ['Real User Monitoring', 'Real User Measurement', 'Real User Maximization', 'Real User Mode'],
-    correctAnswer: 'Real User Monitoring',
+    prompt: 'What is an early computer language famous for being designed by Government and Business without much input from computer scientists?',
+    options: ['MS Office', 'Telnet', 'COBOL', 'C--'],
+    correctAnswer: 'COBOL',
     cashPrize: 1000
   }
 ];

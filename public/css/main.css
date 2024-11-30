@@ -87,12 +87,24 @@ button:active {
   grid-template-columns: repeat(5, 1fr);
 }
 
-.gridbtn {
-  width: 100%;
-  height: 90px;
-  background-color: darkblue;
-  font-size: 2em;
+@media screen and (orientation: landscape) {
+  .gridbtn {
+    width: 100%;
+    height: 90px;
+    background-color: darkblue;
+    font-size: 1.5em;
+  }
 }
+
+@media screen and (orientation: portrait) {
+  .gridbtn {
+    width: 100%;
+    height: 90px;
+    background-color: darkblue;
+    font-size: 18px;
+  }
+}
+
 
 .gridstyling {
   display: grid;
