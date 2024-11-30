@@ -16,10 +16,9 @@
 
 A trimmed down and spruced up version of the game to celebrate 8 years in the industry.
 
-Upgraded Bootstrap to v5.3.3
-JQuery to 3.7.1
-
-
+* Added a new line of questions
+* Upgraded Bootstrap to v5.3.3
+* Upgraded JQuery to 3.7.1
 
 ### Previous: Web Dev Jeopardy by Morgan Murrah - v4.0
 
