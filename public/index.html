@@ -1,26 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
-    <title>Jeopardy by Morgan Murrah</title>
-    <meta name="Jeopardy by Morgan Murrah" content="Web Development Questions">
-    <meta name="Morgan Murrah" content="Web Development Questions">
-    <meta name="description" content="Web Development Questions">
+    <title>Jeopardy by Morgan Murrah - 8th year edition</title>
+    <meta name="description" content="Web Development Questions: 2024 Edition">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--   Bootstrap -->
+    <!--   Bootstrap v5.3.3 -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <!--   Custom CSS -->
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-    <![endif]-->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="module" src="js/main.js"></script>
 </head>
-
 <div>
     <div class="navbar-header">
-        <a class="navbar-brand" href="#">Home</a>
-        <a class="navbar-brand" href="https://github.com/airbr/webdev-jeopardy">Github Repository</a>
+        <h3><a class="navbar-brand" href="#">Home - 8th year edition</a></h3>
+        <h3><a class="navbar-brand" href="https://github.com/airbr/webdev-jeopardy">Github Repository</a></h3>
         <button type="button" class="navbar-toggle" data-bs-toggle="collapse" data-bs-target="#myNavbar">
             About / Music Control
         </button>
@@ -69,13 +65,15 @@
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-hidden="true"></button>
                                 </div>
+                                <fieldset>
+                                    <legend>Select an answer:</legend>
                                 <div class="modal-body body-spacing">
                                 </div>
-                                <div class="modal-footer">
-                                    <button id="closesubmit" type="button" class="btn btn-primary clickable"
-                                        onclick="">Submit
-                                    </button>
-                                </div>
+                                <button id="closesubmit" type="button" class="btn btn-primary clickable"
+                                onclick="">Submit
+                            </button>
+                            </fieldset>
+
                             </div>
                         </div>
                     </div>
@@ -250,10 +248,5 @@
             </div>
         </div>
     </div>
-    <script src="js/jquery-3.6.3.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script type="module" src="js/main.js"></script>
-
 </body>
-
 </html>

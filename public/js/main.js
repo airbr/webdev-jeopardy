@@ -1,6 +1,5 @@
 import questions from './questions.js';
 
-
 // Buzzer & Chaching sounds
 var buzzer = document.getElementById("buzzer");
 buzzer = window.buzzer;

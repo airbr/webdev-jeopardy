@@ -2,27 +2,28 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/d2988db9-2b31-44b8-8174-2558da78c846/deploy-status)](https://app.netlify.com/sites/webdev-jeopardy/deploys)
 
-
 ## [Live Deployment on Netlify, Click to Play](https://webdev-jeopardy.netlify.app/)
 
-*Get Started:*
+*Get Started Locally:*
 
  1. Clone Repository
  2. Turn on your audio (Optional... but highly reccomended!)
  3. Open public/index.html with a server of your choice in your web browser `http-server public/`
  4. Enjoy
 
-<!-- Using Docker via [Dockerhub](https://hub.docker.com/repository/docker/airbr/webdev-jeopardy):
 
-1. `docker run -d -P --name jeopardy airbr/webdev-jeopardy` 
-2. `docker port jeopardy`
-3. Visit at the ports assigned! -->
+# Web Dev Jeopardy by Morgan Murrah - v5.0 - 2024 Career Update Edition!
 
-### Web Dev Jeopardy by Morgan Murrah - v4.0
+A trimmed down and spruced up version of the game to celebrate 8 years in the industry.
 
+Upgraded Bootstrap to v5.3.3
+JQuery to 3.7.1
+
+
+
+### Previous: Web Dev Jeopardy by Morgan Murrah - v4.0
 
 ### Current Game:
-
 
 ![](readme-assets/mobilescreenshot-jeopardy.png)
 
