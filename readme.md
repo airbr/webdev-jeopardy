@@ -4,15 +4,16 @@
 
 ## [Live Deployment on Netlify, Click to Play](https://webdev-jeopardy.netlify.app/)
 
-*Get Started Locally:*
+# Web Dev Jeopardy by Morgan Murrah - v6.0 - 2025 Career Update Edition!
 
- 1. Clone Repository
- 2. Turn on your audio (Optional... but highly reccomended!)
- 3. Open public/index.html with a server of your choice in your web browser `http-server public/`
- 4. Enjoy
+### Current Game:
+
+![](readme-assets/mobilescreenshot-jeopardy.png)
 
 
-# Web Dev Jeopardy by Morgan Murrah - v5.0 - 2024 Career Update Edition!
+This game started as one of my first ever web projects and was my first application of HTML, CSS, Javsacript and JQuery. This was my beginning. 
+
+In 2023 I have started to revisit this project for some fun and upgraded the libraries used and refactored to make them work.
 
 A trimmed down and spruced up version of the game to celebrate 8 years in the industry.
 
@@ -20,15 +21,6 @@ A trimmed down and spruced up version of the game to celebrate 8 years in the in
 * Upgraded Bootstrap to v5.3.3
 * Upgraded JQuery to 3.7.1
 
-### Previous: Web Dev Jeopardy by Morgan Murrah - v4.0
-
-### Current Game:
-
-![](readme-assets/mobilescreenshot-jeopardy.png)
-
-This game started as one of my first ever web projects and was my first application of HTML, CSS, Javsacript and JQuery. This was my beginning. 
-
-In 2023 I have started to revisit this project for some fun and upgraded the libraries used and refactored to make them work.
 
 #### Future development:
 
