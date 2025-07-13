@@ -113,8 +113,8 @@ const questions = [
   },
   {
     prompt: 'Someone shady on the internet tells you to enter a "rm -rf" command into your terminal on your root directory. Doing this would:',
-    options: ['Remake your filedomains', 'Rename your file register', 'Recursively rename all your files with the tag rm', 'Irreparably damage your file system'],
-    correctAnswer: 'Irreparably damage your file system',
+    options: ['Remake your filedomains', 'Rename your file register', 'Recursively rename all your files with the tag rm', 'Damage your file system'],
+    correctAnswer: 'Damage your file system',
     cashPrize: 500
   },
   {
@@ -138,7 +138,7 @@ const questions = [
   },
   {
     prompt: 'Which of these are not Performance products?',
-    options: ['SpeedCurve', 'mPulse', 'DebugBear', 'SpinningTree'],
+    options: ['SpeedCurve', 'mPulse', 'Rumvision', 'SpinningTree'],
     correctAnswer: 'SpinningTree',
     cashPrize: 100
   },

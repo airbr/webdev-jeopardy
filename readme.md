@@ -8,12 +8,12 @@
 
 ### Current Game:
 
-![](readme-assets/mobilescreenshot-jeopardy.png)
+![](readme-assets/ipad-screenshot.png)
 
 
-This game started as one of my first ever web projects and was my first application of HTML, CSS, Javsacript and JQuery. This was my beginning. 
+This game started as one of my first ever web projects in 2016 and was my first application of HTML, CSS, Javsacript and JQuery. This was my beginning. 
 
-In 2023 I have started to revisit this project for some fun and upgraded the libraries used and refactored to make them work.
+In 2025 I have started to revisit this project for some fun and upgraded the libraries used and refactored to make them work.
 
 A trimmed down and spruced up version of the game to celebrate 8 years in the industry.
 
