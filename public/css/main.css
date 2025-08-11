@@ -1,3 +1,25 @@
+header, main, div.main-board {
+  max-width: 70ch;
+  margin: 0 auto;
+  min-width: 375px;
+  /* min-width: 90%; */
+}
+
+.navbar-brand {
+  text-decoration: underline;
+}
+
+.qcategory-title {
+  font-size: 1.8em;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .radio-inline {
   font-size: 2em;
 }
@@ -184,7 +206,7 @@ button:active {
   justify-content: center;
 }
 
-h4 {
+.modal-title {
   font-size: 35px;
 }
 
@@ -194,4 +216,8 @@ p {
 
 .btn:hover, .btn:active {
   transform: scale(1.1); 
+}
+
+legend {
+  font-size: 20px;
 }

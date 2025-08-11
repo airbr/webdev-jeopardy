@@ -14,15 +14,13 @@
     <script src="js/bootstrap.min.js"></script>
     <script type="module" src="js/main.js"></script>
 </head>
-
-<div>
-    <div class="navbar-header">
-        <h3><a class="navbar-brand" href="#">Home - 8th year edition</a></h3>
-        <h3><a class="navbar-brand" href="https://github.com/airbr/webdev-jeopardy">Github Repository</a></h3>
+<body>
+    <header class="navbar-header">
+        <h1><a class="navbar-brand" href="#">Home of Wedbev Jeopardy - 8th year edition</a></h1>
+        <h2><a class="navbar-brand" href="https://github.com/airbr/webdev-jeopardy">Github Repository</a></h2>
         <button type="button" class="navbar-toggle" data-bs-toggle="collapse" data-bs-target="#myNavbar">
             About / Music Control
         </button>
-    </div>
     <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
             <!-- <li><a href=""></a></li>-->
@@ -43,16 +41,12 @@
             </audio>
         </ul>
     </div>
-</div>
-</nav>
-
-<body>
-
     <div class="logo">
         <img src="css/images/Jeopardy.png" alt="Jeopardy Logo" id="topjlogo">
     </div>
+    </header>
 
-    <div>
+    <main>
 
         <div id="main-board">
             <!--MODAL HTML - Dynamically changed withquestions-->
@@ -63,7 +57,7 @@
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h4 class="modal-title">Modal Window</h4>
+                                    <p class="modal-title">Modal Window</p>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-hidden="true"></button>
                                 </div>
@@ -84,19 +78,19 @@
 
             <div class="panel-heading">
                 <div class="qcategory-title text-center">
-                    <h5>HTML</h5>
+                    <strong>HTML</strong>
                 </div>
                 <div class="qcategory-title text-center">
-                    <h5>CSS</h5>
+                    <strong>CSS</strong>
                 </div>
                 <div class="qcategory-title text-center">
-                    <h5>JS</h5>
+                    <strong>JS</strong>
                 </div>
                 <div class="qcategory-title text-center">
-                    <h5>UNIX</h5>
+                    <strong>UNIX</strong>
                 </div>
                 <div class="qcategory-title text-center">
-                    <h5>PERF</h5>
+                    <strong>PERF</strong>
                 </div>
             </div>
 
@@ -244,12 +238,12 @@
             <!-- Footer & Dynamic scoreboard -->
             <div class="panel-footer">
                 <div class="scoretally pull-right">
-                    <h4>Score:<span id="score1">$ 0</span></h4>
+                    <h3>Score:<span id="score1">$ 0</span></h3>
                 </div>
                 <div class="clearfix"></div>
             </div>
         </div>
-    </div>
+    </main>
 </body>
 
 </html>
