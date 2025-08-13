@@ -1,159 +1,59 @@
-const questions = [
-  /* Category 1 Questions */
+// Refactored: Group questions by category for clarity and maintainability
+const categories = [
   {
-    prompt: 'What is the expansion of HTML?',
-    options: ['Hyper Text Markup Language', 'Holding Text Marker Language', 'Hyperlink Text Management Language', 'Holding Text Modal Language'],
-    correctAnswer: 'Hyper Text Markup Language',
-    cashPrize: 10
+    name: 'HTML',
+    questions: [
+      { prompt: 'Which tag is used to create a hyperlink in HTML?', options: ['<a>', '<link>', '<href>', '<hyper>'], correctAnswer: '<a>', cashPrize: 10 },
+      { prompt: 'Which attribute is used to provide alternative text for an image?', options: ['alt', 'src', 'title', 'href'], correctAnswer: 'alt', cashPrize: 50 },
+      { prompt: 'Which HTML element is used for the largest heading?', options: ['<h6>', '<heading>', '<h1>', '<head>'], correctAnswer: '<h1>', cashPrize: 100 },
+      { prompt: 'What does the <form> element do?', options: ['Creates a table', 'Embeds a video', 'Collects user input', 'Defines a section'], correctAnswer: 'Collects user input', cashPrize: 500 },
+      { prompt: 'Which tag is used to display a numbered list?', options: ['<ul>', '<ol>', '<li>', '<dl>'], correctAnswer: '<ol>', cashPrize: 1000 }
+    ]
   },
   {
-    prompt: 'What is the current version of HTML?',
-    options: ['HTMLv5000', 'HTML', 'HTML2016', 'HTMLC'],
-    correctAnswer: 'HTML',
-    cashPrize: 50
+    name: 'CSS',
+    questions: [
+      { prompt: 'Which property is used to change the text color of an element?', options: ['font-color', 'color', 'text-color', 'background-color'], correctAnswer: 'color', cashPrize: 10 },
+      { prompt: 'Which CSS selector targets an element with id="main"?', options: ['#main', '.main', 'main', '*main'], correctAnswer: '#main', cashPrize: 50 },
+      { prompt: 'Which property is used to set the spacing between lines of text?', options: ['line-height', 'letter-spacing', 'word-spacing', 'text-spacing'], correctAnswer: 'line-height', cashPrize: 100 },
+      { prompt: 'What does the display: flex property do?', options: ['Makes text bold', 'Creates a flexible container', 'Hides the element', 'Changes font'], correctAnswer: 'Creates a flexible container', cashPrize: 500 },
+      { prompt: 'Which property is used to add shadow to text?', options: ['box-shadow', 'text-shadow', 'shadow', 'font-shadow'], correctAnswer: 'text-shadow', cashPrize: 1000 }
+    ]
   },
   {
-    prompt: 'What language placed in a seperate file has largely replaced use of <style></style> elements?',
-    options: ['HTMLS Code', 'Style Sheet Language', 'CSS or Central Style Sheet', 'CSS or Cascading Style Sheets'],
-    correctAnswer: 'CSS or Cascading Style Sheets',
-    cashPrize: 100
+    name: 'JavaScript',
+    questions: [
+      { prompt: 'Which keyword declares a variable in JavaScript?', options: ['var', 'int', 'let', 'Both var and let'], correctAnswer: 'Both var and let', cashPrize: 10 },
+      { prompt: 'What is the output of: console.log(typeof [])?', options: ['array', 'object', 'list', 'undefined'], correctAnswer: 'object', cashPrize: 50 },
+      { prompt: 'Which method is used to select an element by its ID?', options: ['getElementById', 'querySelectorAll', 'getElementsByClass', 'getElement'], correctAnswer: 'getElementById', cashPrize: 100 },
+      { prompt: 'What does JSON stand for?', options: ['JavaScript Object Notation', 'Java Source Object Notation', 'JavaScript Oriented Notation', 'Java Syntax Object Notation'], correctAnswer: 'JavaScript Object Notation', cashPrize: 500 },
+      { prompt: 'Which symbol is used for single-line comments in JavaScript?', options: ['//', '<!--', '#', '/*'], correctAnswer: '//', cashPrize: 1000 }
+    ]
   },
   {
-    prompt: 'What new element type introduced in HTML5 is functionally the same as a Div?',
-    options: ['Semantic Tags', 'PseudoDivs', 'DivisionIDs', 'Division Notation'],
-    correctAnswer: 'Semantic Tags',
-    cashPrize: 500
+    name: 'Command Line & Tools',
+    questions: [
+      { prompt: 'Which command lists files and directories in Unix/Linux?', options: ['ls', 'cd', 'pwd', 'cat'], correctAnswer: 'ls', cashPrize: 10 },
+      { prompt: 'Which command is used to change directories?', options: ['cd', 'ls', 'mv', 'cp'], correctAnswer: 'cd', cashPrize: 50 },
+      { prompt: 'What does the command "mkdir" do?', options: ['Deletes a directory', 'Moves a file', 'Creates a directory', 'Lists files'], correctAnswer: 'Creates a directory', cashPrize: 100 },
+      { prompt: 'Which tool is commonly used for version control in web development?', options: ['Git', 'NPM', 'Webpack', 'Docker'], correctAnswer: 'Git', cashPrize: 500 },
+      { prompt: 'Which file is used to define dependencies for a Node.js project?', options: ['package.json', 'index.html', 'requirements.txt', 'main.js'], correctAnswer: 'package.json', cashPrize: 1000 }
+    ]
   },
   {
-    prompt: 'Browsers do not usually allow cross-site actions but there is one major exception:',
-    options: ['Get Requests', 'Ping Commands', 'iFrames', 'Git'],
-    correctAnswer: 'iFrames',
-    cashPrize: 1000
-  },
-  /* Category 2 Questions */
-  {
-    prompt: 'What is the expansion of CSS?',
-    options: ['Cascading Style Sheets', 'Central Style Server', 'Control Set Styles', 'C Safe Server'],
-    correctAnswer: 'Cascading Style Sheets',
-    cashPrize: 10
-  },
-  {
-    prompt: 'The "<Span> </Span>" has what as a default property?',
-    options: ['set-length', 'block', 'timestamp', 'inline'],
-    correctAnswer: 'inline',
-    cashPrize: 50
-  },
-  {
-    prompt: 'The * css selector applies to what?',
-    options: ['Everything', 'Wildcard elements', 'Multiplication Functions', 'Elements with the Id of *'],
-    correctAnswer: 'Everything',
-    cashPrize: 100
-  },
-  {
-    prompt: 'What feature recently introduced in CSS 3 addresses issues with "floats"?',
-    options: ['Center Flagpoints', 'Flexbox', 'Flexpoints', 'FloatV2.0'],
-    correctAnswer: 'Flexbox',
-    cashPrize: 500
-  },
-  {
-    prompt: 'CSS is hard. What is one feature that makes it hard compared to other languages? ',
-    options: ['Lack of Case Examples', 'No Error Output', 'Inclusion of complex variable functions', 'Lack of documentation'],
-    correctAnswer: 'No Error Output',
-    cashPrize: 1000
-  },
-  /* Category 3 Questions */
-  {
-    prompt: 'Which is a coding language or library not actually relevant to modern Javascript?',
-    options: ['Java', 'ECMAScript', 'Ajax', 'JQuery'],
-    correctAnswer: 'Java',
-    cashPrize: 10
-  },
-  {
-    prompt: 'Javascript is usually described as a " "-based language?',
-    options: ['Relational', 'COBOL', 'Object', 'Directional'],
-    correctAnswer: 'Object',
-    cashPrize: 50
-  },
-  {
-    prompt: 'JSON is: ',
-    options: ['A Javascript engine', 'A text format readable by Javascript', 'A Javascript library', 'A Javascript function'],
-    correctAnswer: 'A text format readable by Javascript',
-    cashPrize: 100
-  },
-  {
-    prompt: 'Angular JS is an example of:',
-    options: ['A JS Framework', 'an open-source, cross-platform runtime environment for developing server-side web applications', 'A JS library', 'An AJAX library'],
-    correctAnswer: 'A JS Framework',
-    cashPrize: 500
-  },
-  {
-    prompt: 'Can you change the properties on a const variable?',
-    options: ['Never', 'Yes, by default', 'Yes, only if $constprop is present', 'Yes, if in an IIFE'],
-    correctAnswer: 'Yes, by default',
-    cashPrize: 1000
-  },
-  /* Category 4 Questions */
-  {
-    prompt: 'The Terminal or command line is an example of a?',
-    options: ['Interconnected Network', 'Read-Eval-Print-Loop', 'C++ Library Object', 'Skynet'],
-    correctAnswer: 'Read-Eval-Print-Loop',
-    cashPrize: 10
-  },
-  {
-    prompt: 'UNIX was added relatively later into what popular propietary operating system?',
-    options: ['Windows 10', 'Linux Mint', 'Mac OS X', 'Ubuntu'],
-    correctAnswer: 'Mac OS X',
-    cashPrize: 50
-  },
-  {
-    prompt: 'The command "man x" would?',
-    options: ['Bring up the task manager for x', 'Modularize x', 'Attempt to bring up the manual page for x', 'Make x mandatory on startup'],
-    correctAnswer: 'Attempt to bring up the manual page for x',
-    cashPrize: 100
-  },
-  {
-    prompt: 'Someone shady on the internet tells you to enter a "rm -rf" command into your terminal on your root directory. Doing this would:',
-    options: ['Remake your filedomains', 'Rename your file register', 'Recursively rename all your files with the tag rm', 'Damage your file system'],
-    correctAnswer: 'Damage your file system',
-    cashPrize: 500
-  },
-  {
-    prompt: 'The GREP command allows a user to:',
-    options: ['Quickly search files for specific items of text', 'Grab-Read-Evaluate-Loop', 'Gauge RAM event parameters', 'Group related events in the processor'],
-    correctAnswer: 'Quickly search files for specific items of text',
-    cashPrize: 1000
-  },
-  /* Category 5 Questions */
-  {
-    prompt: 'What is DOMContentLoaded?',
-    options: ['A meaningless trivial thing', 'A web performance certification', 'A rare error', 'A timing event for performance measurement'],
-    correctAnswer: 'A timing event for performance measurement',
-    cashPrize: 10
-  },
-  {
-    prompt: 'What is the best lighthouse score possible?',
-    options: ['A+', 'Four Hundreds', 'Certified', 'Correct'],
-    correctAnswer: 'Four Hundreds',
-    cashPrize: 50
-  },
-  {
-    prompt: 'Which of these are not Performance products?',
-    options: ['SpeedCurve', 'mPulse', 'Rumvision', 'SpinningTree'],
-    correctAnswer: 'SpinningTree',
-    cashPrize: 100
-  },
-  {
-    prompt: 'What is not a Core Web Vital?',
-    options: ['FID', 'INP', 'CLS', 'LCP'],
-    correctAnswer: 'FID',
-    cashPrize: 500
-  },
-  {
-    prompt: 'What is RUM?',
-    options: ['Real User Monitoring', 'Real User Measurement', 'Real User Maximization', 'Real User Mode'],
-    correctAnswer: 'Real User Monitoring',
-    cashPrize: 1000
+    name: 'Web Performance & General Web',
+    questions: [
+      { prompt: 'What does the acronym SEO stand for?', options: ['Search Engine Optimization', 'Simple Email Output', 'Server Event Operation', 'Secure External Output'], correctAnswer: 'Search Engine Optimization', cashPrize: 10 },
+      { prompt: 'Which tool is used to analyze website performance in Chrome?', options: ['Lighthouse', 'Firebug', 'PageSpeed', 'WebPageTest'], correctAnswer: 'Lighthouse', cashPrize: 50 },
+      { prompt: 'What is a CDN?', options: ['Content Delivery Network', 'Central Data Node', 'Code Deployment Network', 'Content Data Network'], correctAnswer: 'Content Delivery Network', cashPrize: 100 },
+      { prompt: 'Which metric measures how quickly a web page becomes interactive?', options: ['TTI', 'FCP', 'LCP', 'CLS'], correctAnswer: 'TTI', cashPrize: 500 },
+      { prompt: 'Which protocol is used for secure communication on the web?', options: ['HTTP', 'FTP', 'HTTPS', 'SMTP'], correctAnswer: 'HTTPS', cashPrize: 1000 }
+    ]
   }
 ];
 
+// Export a flat array for compatibility with existing code
+const questions = categories.reduce((arr, cat) => arr.concat(cat.questions), []);
+
+export { categories };
 export default questions;

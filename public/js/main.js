@@ -1,105 +1,88 @@
 import questions from './questions.js';
 
-// Buzzer & Chaching sounds
-var buzzer = document.getElementById("buzzer");
-buzzer = window.buzzer;
+// Sound elements
+const buzzer = document.getElementById('buzzer') || window.buzzer;
+const chaching = document.getElementById('chaching') || window.chaching;
 
-function playbuzzer() {
-  buzzer.play();
+function playBuzzer() {
+  if (buzzer) buzzer.play();
+}
+function pauseBuzzer() {
+  if (buzzer) buzzer.pause();
+}
+function playChaching() {
+  if (chaching) chaching.play();
+}
+function pauseChaching() {
+  if (chaching) chaching.pause();
 }
 
-function pausebuzzer() {
-  buzzer.pause();
-}
-var chaching = document.getElementById("chaching");
-chaching = window.chaching;
+let score = 0;
 
-function playchaching() {
-  chaching.play();
-}
-
-function pausechaching() {
-  chaching.pause();
-}
-// Global variable  score...
-var score = 0;
-//
 $(function () {
-  // Remove Element after click
-  $(".gridbtn").on("click", function () {
-    $(this).addClass("disabled");
-    $(this).remove();
+  // Remove question button after click
+  $('.gridbtn').on('click', function () {
+    $(this).addClass('disabled').remove();
+  });
+
+  // Modal show: populate question
+  $('#myModal').on('show.bs.modal', function (event) {
+    showQuestion(event, $(this));
+  });
+
+  // Modal close: log
+  $('#myModal').on('hidden.bs.modal', function () {
+    console.log('The modal is now hidden.');
+  });
+
+  // Submit answer
+  $('#closesubmit').on('click', function () {
+    $('#myModal').modal('toggle');
+    submit();
   });
 });
 
-$("#closesubmit").on("click", function () {
-  $('#myModal').modal('toggle');
-  submit();
-});
-
-// Submit Question Answer
-function submit(a, b) {
-  var selected = $(".modal-body input:checked").val();
-  // Determine if correct answer was chosen and alert prize
-  if (selected === questions[window.currentQuestion].correctAnswer) {
-    // console.log(selected + " was selected");
-    chaching.play();
-    window.addprize = questions[window.currentQuestion].cashPrize;
-    score = score + window.addprize;
-    $('#score1').html("  $" + score);
-    if (!Math.sign(score)) {
-      $('#score1').addClass("negative");
-    } else {
-      $('#score1').removeClass("negative");
-    }
+function submit() {
+  const selected = $('.modal-body input:checked').val();
+  const q = questions[window.currentQuestion];
+  if (!selected || !q) return;
+  const isCorrect = selected === q.correctAnswer;
+  const prize = q.cashPrize;
+  if (isCorrect) {
+    playChaching();
+    score += prize;
+  } else {
+    playBuzzer();
+    score -= prize;
   }
-  // Determine if incorrect answer was chosen and alert prize
-  if (selected !== questions[window.currentQuestion].correctAnswer) {
-    buzzer.play();
-    window.subprize = questions[window.currentQuestion].cashPrize;
-    score = score - window.subprize;
-    console.log(score);
-    $('#score1').html("  $" + score);
-    if (Math.sign(score)) {
-      $('#score1').addClass("negative");
-    } else {
-      $('#score1').removeClass("negative");
-    }
+  $('#score1').html('  $' + score);
+  if (score < 0) {
+    $('#score1').addClass('negative');
+  } else {
+    $('#score1').removeClass('negative');
   }
 }
-// Get question info from array, prepare
+
 function getOptions(question) {
-  var $buttonDiv = $('<div id="disabled" class="btn-group" data-bs-toggle="buttons"></div><br>');
-  question.options.forEach(function (opt) {
-    var $div = $('<div class="radio">');
-    var $label = $('<label class="radio-inline"></label');
-    var $input = $('<input type="radio" name="opts" value="' + opt + '">');
+  const $buttonDiv = $('<div class="btn-group" data-bs-toggle="buttons"></div><br>');
+  question.options.forEach(opt => {
+    const $div = $('<div class="radio"></div>');
+    const $label = $('<label class="radio-inline"></label>');
+    const $input = $('<input type="radio" name="opts" value="' + $('<div>').text(opt).html() + '">');
     $label.append($input);
-    $label.append(opt);
+    $label.append(' ');
+    $label.append(document.createTextNode(opt)); // Render as plaintext
     $div.append($label);
     $buttonDiv.append($div);
   });
   return $buttonDiv;
 }
-// Populate modal window with specific question
+
 function showQuestion(event, $modal) {
-  var button = $(event.relatedTarget); // Button that triggered the modal
-  var num = parseInt(button.data('num'));
-  var question = questions[num];
+  const button = $(event.relatedTarget);
+  const num = parseInt(button.data('num'));
+  const question = questions[num];
   window.currentQuestion = num;
   $modal.find('.modal-title').text(question.prompt);
   $modal.find('.modal-body').empty().append(getOptions(question));
 }
-// Modal show/close functions
-$(function () {
-  $("#myModal").on('show.bs.modal', function (event) {
-    showQuestion(event, $(this));
-  });
-});
-$("#myModal").on('hidden.bs.modal', function () {
-  console.log('The modal is now hidden.');
-});
-// $('.modal-body input:checked').on(function () {
-//   $('#myModal').modal('toggle');
-//   return false;
-// });

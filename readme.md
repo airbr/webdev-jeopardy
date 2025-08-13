@@ -4,14 +4,13 @@
 
 ## [Live Deployment on Netlify, Click to Play](https://webdev-jeopardy.netlify.app/)
 
-# Web Dev Jeopardy by Morgan Murrah - v6.0 - 2025 Career Update Edition!
+# Web Dev Jeopardy by Morgan Murrah - v7.0 - 2025 Career Update Edition!
+
+This game started as one of my first ever web projects in 2016 and was my first application of HTML, CSS, Javsacript and JQuery. This was my beginning. 
 
 ### Current Game:
 
 ![](readme-assets/ipad-screenshot.png)
-
-
-This game started as one of my first ever web projects in 2016 and was my first application of HTML, CSS, Javsacript and JQuery. This was my beginning. 
 
 In 2025 I have started to revisit this project for some fun and upgraded the libraries used and refactored to make them work.
 

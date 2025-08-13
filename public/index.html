@@ -1,239 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <title>Jeopardy by Morgan Murrah - 8+ year edition</title>
     <meta name="description" content="Web Development Questions: 2024 Edition">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--   Bootstrap v5.3.3 -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <!--   Custom CSS -->
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- Bootstrap v5.3.3 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css">
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script type="module" src="js/main.js"></script>
 </head>
 <body>
-    <header class="navbar-header">
-        <h1><a class="navbar-brand" href="#">Home of Wedbev Jeopardy - 8th year edition</a></h1>
-        <h2><a class="navbar-brand" href="https://github.com/airbr/webdev-jeopardy">Github Repository</a></h2>
-        <button type="button" class="navbar-toggle" data-bs-toggle="collapse" data-bs-target="#myNavbar">
-            About / Music Control
-        </button>
-    <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav">
-            <!-- <li><a href=""></a></li>-->
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-            <!-- Background music -->
-            <audio controls autoplay>
-                <source src="sounds/Jeopardy-theme-song.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
-            <audio id="buzzer">
-                <source src="sounds/Wrong-answer-sound-effect.mp3" type="audio/mpeg">
-                Your browser does not support HTML5 video.
-            </audio>
-            <audio id="chaching">
-                <source src="sounds/Cash-register-sound.wav" type="audio/mpeg">
-                Your browser does not support HTML5 video.
-            </audio>
-        </ul>
-    </div>
-    <div class="logo">
-        <img src="css/images/Jeopardy.png" alt="Jeopardy Logo" id="topjlogo">
-    </div>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Home of Webdev Jeopardy - 8th year edition</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar" aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    About / Music Control
+                </button>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://github.com/airbr/webdev-jeopardy">Github Repository</a>
+                        </li>
+                        <li class="nav-item d-flex align-items-center">
+                            <audio controls autoplay>
+                                <source src="sounds/Jeopardy-theme-song.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                            <audio id="buzzer">
+                                <source src="sounds/Wrong-answer-sound-effect.mp3" type="audio/mpeg">
+                                Your browser does not support HTML5 video.
+                            </audio>
+                            <audio id="chaching">
+                                <source src="sounds/Cash-register-sound.wav" type="audio/mpeg">
+                                Your browser does not support HTML5 video.
+                            </audio>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="logo text-center mt-3">
+            <img src="css/images/Jeopardy.png" alt="Jeopardy Logo" id="topjlogo">
+        </div>
     </header>
-
     <main>
-
         <div id="main-board">
-            <!--MODAL HTML - Dynamically changed withquestions-->
-            <div>
-                <div class="bs-example">
-                    <!-- Modal HTML -->
-                    <div id="myModal" class="modal fade">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <p class="modal-title">Modal Window</p>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-hidden="true"></button>
-                                </div>
-                                <fieldset>
-                                    <legend>Select an answer:</legend>
-                                <div class="modal-body body-spacing">
-                                </div>
-                                <button id="closesubmit" type="button" class="btn btn-primary clickable"
-                                onclick="">Submit
-                            </button>
-                            </fieldset>
-
+            <!-- Modal for questions -->
+            <div class="bs-example">
+                <div id="myModal" class="modal fade">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <p class="modal-title">Modal Window</p>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
                             </div>
+                            <fieldset>
+                                <legend>Select an answer:</legend>
+                                <div class="modal-body body-spacing"></div>
+                                <button id="closesubmit" type="button" class="btn btn-primary clickable">Submit</button>
+                            </fieldset>
                         </div>
                     </div>
                 </div>
             </div>
-
             <div class="panel-heading">
-                <div class="qcategory-title text-center">
-                    <strong>HTML</strong>
-                </div>
-                <div class="qcategory-title text-center">
-                    <strong>CSS</strong>
-                </div>
-                <div class="qcategory-title text-center">
-                    <strong>JS</strong>
-                </div>
-                <div class="qcategory-title text-center">
-                    <strong>UNIX</strong>
-                </div>
-                <div class="qcategory-title text-center">
-                    <strong>PERF</strong>
-                </div>
+                <div class="qcategory-title text-center"><strong>HTML</strong></div>
+                <div class="qcategory-title text-center"><strong>CSS</strong></div>
+                <div class="qcategory-title text-center"><strong>JS</strong></div>
+                <div class="qcategory-title text-center"><strong>UNIX</strong></div>
+                <div class="qcategory-title text-center"><strong>PERF</strong></div>
             </div>
-
             <div class="gridstyling" id="gridstyling">
-                <!-- Category 1 , Questions 1-5 -->
-
-                <div class="question">
-                    <button type="button" class="btn btn-info gridbtn ten" data-bs-toggle="modal" data-bs-target="#myModal"
-                        data-num="0">$10
-                    </button>
-                </div>
-                <div class="question">
-                    <button type="button" class="btn btn-info gridbtn fifty" data-bs-toggle="modal" data-bs-target="#myModal"
-                        data-num="1">$50
-                    </button>
-                </div>
-                <div class="question">
-                    <button type="button" class="btn btn-info gridbtn onehundred" data-bs-toggle="modal"
-                        data-bs-target="#myModal" data-num="2">$100
-                    </button>
-                </div>
-                <div class="question">
-                    <button type="button" class="btn btn-info gridbtn fivehundred" data-bs-toggle="modal"
-                        data-bs-target="#myModal" data-num="3">$500
-                    </button>
-                </div>
-                <div class="question">
-                    <button type="button" class="btn btn-info gridbtn onethousand" data-bs-toggle="modal"
-                        data-bs-target="#myModal" data-num="4">$1000
-                    </button>
-                </div>
-
-                <!-- Category 2 ; rinse, repeat -->
-
-                <div class="question">
-                    <button type="button" class="btn btn-info gridbtn ten" data-bs-toggle="modal" data-bs-target="#myModal"
-                        data-num="5">$10
-                    </button>
-                </div>
-                <div class="question">
-                    <button type="button" class="btn btn-info gridbtn fifty" data-bs-toggle="modal" data-bs-target="#myModal"
-                        data-num="6">$50
-                    </button>
-                </div>
-                <div class="question">
-                    <button type="button" class="btn btn-info gridbtn onehundred" data-bs-toggle="modal"
-                        data-bs-target="#myModal" data-num="7">$100
-                    </button>
-                </div>
-                <div class="question">
-                    <button type="button" class="btn btn-info gridbtn fivehundred" data-bs-toggle="modal"
-                        data-bs-target="#myModal" data-num="8">$500
-                    </button>
-                </div>
-                <div class="question">
-                    <button type="button" class="btn btn-info gridbtn onethousand" data-bs-toggle="modal"
-                        data-bs-target="#myModal" data-num="9">$1000
-                    </button>
-                </div>
-
+                <!-- Category 1 -->
+                <div class="question"><button type="button" class="btn btn-info gridbtn ten" data-bs-toggle="modal" data-bs-target="#myModal" data-num="0">$10</button></div>
+                <div class="question"><button type="button" class="btn btn-info gridbtn fifty" data-bs-toggle="modal" data-bs-target="#myModal" data-num="1">$50</button></div>
+                <div class="question"><button type="button" class="btn btn-info gridbtn onehundred" data-bs-toggle="modal" data-bs-target="#myModal" data-num="2">$100</button></div>
+                <div class="question"><button type="button" class="btn btn-info gridbtn fivehundred" data-bs-toggle="modal" data-bs-target="#myModal" data-num="3">$500</button></div>
+                <div class="question"><button type="button" class="btn btn-info gridbtn onethousand" data-bs-toggle="modal" data-bs-target="#myModal" data-num="4">$1000</button></div>
+                <!-- Category 2 -->
+                <div class="question"><button type="button" class="btn btn-info gridbtn ten" data-bs-toggle="modal" data-bs-target="#myModal" data-num="5">$10</button></div>
+                <div class="question"><button type="button" class="btn btn-info gridbtn fifty" data-bs-toggle="modal" data-bs-target="#myModal" data-num="6">$50</button></div>
+                <div class="question"><button type="button" class="btn btn-info gridbtn onehundred" data-bs-toggle="modal" data-bs-target="#myModal" data-num="7">$100</button></div>
+                <div class="question"><button type="button" class="btn btn-info gridbtn fivehundred" data-bs-toggle="modal" data-bs-target="#myModal" data-num="8">$500</button></div>
+                <div class="question"><button type="button" class="btn btn-info gridbtn onethousand" data-bs-toggle="modal" data-bs-target="#myModal" data-num="9">$1000</button></div>
                 <!-- Category 3 -->
-
-                <div class="question">
-                    <button type="button" class="btn btn-info gridbtn ten" data-bs-toggle="modal" data-bs-target="#myModal"
-                        data-num="10">$10
-                    </button>
-                </div>
-                <div class="question">
-                    <button type="button" class="btn btn-info gridbtn fifty" data-bs-toggle="modal" data-bs-target="#myModal"
-                        data-num="11">$50
-                    </button>
-                </div>
-                <div class="question">
-                    <button type="button" class="btn btn-info gridbtn onehundred" data-bs-toggle="modal"
-                        data-bs-target="#myModal" data-num="12">$100
-                    </button>
-                </div>
-                <div class="question">
-                    <button type="button" class="btn btn-info gridbtn fivehundred" data-bs-toggle="modal"
-                        data-bs-target="#myModal" data-num="13">$500
-                    </button>
-                </div>
-                <div class="question">
-                    <button type="button" class="btn btn-info gridbtn onethousand" data-bs-toggle="modal"
-                        data-bs-target="#myModal" data-num="14">$1000
-                    </button>
-                </div>
-
+                <div class="question"><button type="button" class="btn btn-info gridbtn ten" data-bs-toggle="modal" data-bs-target="#myModal" data-num="10">$10</button></div>
+                <div class="question"><button type="button" class="btn btn-info gridbtn fifty" data-bs-toggle="modal" data-bs-target="#myModal" data-num="11">$50</button></div>
+                <div class="question"><button type="button" class="btn btn-info gridbtn onehundred" data-bs-toggle="modal" data-bs-target="#myModal" data-num="12">$100</button></div>
+                <div class="question"><button type="button" class="btn btn-info gridbtn fivehundred" data-bs-toggle="modal" data-bs-target="#myModal" data-num="13">$500</button></div>
+                <div class="question"><button type="button" class="btn btn-info gridbtn onethousand" data-bs-toggle="modal" data-bs-target="#myModal" data-num="14">$1000</button></div>
                 <!-- Category 4 -->
-
-                <div class="question">
-                    <button type="button" class="btn btn-info gridbtn ten" data-bs-toggle="modal" data-bs-target="#myModal"
-                        data-num="15">$10
-                    </button>
-                </div>
-                <div class="question">
-                    <button type="button" class="btn btn-info gridbtn fifty" data-bs-toggle="modal" data-bs-target="#myModal"
-                        data-num="16">$50
-                    </button>
-                </div>
-                <div class="question">
-                    <button type="button" class="btn btn-info gridbtn onehundred" data-bs-toggle="modal"
-                        data-bs-target="#myModal" data-num="17">$100
-                    </button>
-                </div>
-                <div class="question">
-                    <button type="button" class="btn btn-info gridbtn fivehundred" data-bs-toggle="modal"
-                        data-bs-target="#myModal" data-num="18">$500
-                    </button>
-                </div>
-                <div class="question">
-                    <button type="button" class="btn btn-info gridbtn onethousand" data-bs-toggle="modal"
-                        data-bs-target="#myModal" data-num="19">$1000
-                    </button>
-                </div>
-
+                <div class="question"><button type="button" class="btn btn-info gridbtn ten" data-bs-toggle="modal" data-bs-target="#myModal" data-num="15">$10</button></div>
+                <div class="question"><button type="button" class="btn btn-info gridbtn fifty" data-bs-toggle="modal" data-bs-target="#myModal" data-num="16">$50</button></div>
+                <div class="question"><button type="button" class="btn btn-info gridbtn onehundred" data-bs-toggle="modal" data-bs-target="#myModal" data-num="17">$100</button></div>
+                <div class="question"><button type="button" class="btn btn-info gridbtn fivehundred" data-bs-toggle="modal" data-bs-target="#myModal" data-num="18">$500</button></div>
+                <div class="question"><button type="button" class="btn btn-info gridbtn onethousand" data-bs-toggle="modal" data-bs-target="#myModal" data-num="19">$1000</button></div>
                 <!-- Category 5 -->
-
-                <div class="question">
-                    <button type="button" class="btn btn-info gridbtn ten" data-bs-toggle="modal" data-bs-target="#myModal"
-                        data-num="20">$10
-                    </button>
-                </div>
-                <div class="question">
-                    <button type="button" class="btn btn-info gridbtn fifty" data-bs-toggle="modal" data-bs-target="#myModal"
-                        data-num="21">$50
-                    </button>
-                </div>
-                <div class="question">
-                    <button type="button" class="btn btn-info gridbtn onehundred" data-bs-toggle="modal"
-                        data-bs-target="#myModal" data-num="22">$100
-                    </button>
-                </div>
-                <div class="question">
-                    <button type="button" class="btn btn-info gridbtn fivehundred" data-bs-toggle="modal"
-                        data-bs-target="#myModal" data-num="23">$500
-                    </button>
-                </div>
-                <div class="question">
-                    <button type="button" class="btn btn-info gridbtn onethousand" data-bs-toggle="modal"
-                        data-bs-target="#myModal" data-num="24">$1000
-                    </button>
-                </div>
+                <div class="question"><button type="button" class="btn btn-info gridbtn ten" data-bs-toggle="modal" data-bs-target="#myModal" data-num="20">$10</button></div>
+                <div class="question"><button type="button" class="btn btn-info gridbtn fifty" data-bs-toggle="modal" data-bs-target="#myModal" data-num="21">$50</button></div>
+                <div class="question"><button type="button" class="btn btn-info gridbtn onehundred" data-bs-toggle="modal" data-bs-target="#myModal" data-num="22">$100</button></div>
+                <div class="question"><button type="button" class="btn btn-info gridbtn fivehundred" data-bs-toggle="modal" data-bs-target="#myModal" data-num="23">$500</button></div>
+                <div class="question"><button type="button" class="btn btn-info gridbtn onethousand" data-bs-toggle="modal" data-bs-target="#myModal" data-num="24">$1000</button></div>
             </div>
             <!-- Footer & Dynamic scoreboard -->
             <div class="panel-footer">
@@ -245,5 +119,4 @@
         </div>
     </main>
 </body>
-
 </html>
